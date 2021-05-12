@@ -1,0 +1,158 @@
+body{
+  background-color: #ffffff;
+  margin-top: 6em;
+  font-family: Cabin;
+}
+
+.marca{
+  font-family: Lobster;
+ font-size: 40px;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.titulo{
+  font-family: Lobster;
+  height: 46px;
+  font-weight: 400;
+}
+
+.nav-link{
+  font-family: Cabin;
+  font-weight: 400;
+}
+
+
+
+.navbar-brand{
+top: 12px;
+left: 119px;
+width: 132px;
+height: 53px;
+background: url(" "../img/logo.png" ") no-repeat padding-box;
+background-position: center center;
+background-size: cover;
+text-align: center;
+
+}
+
+
+
+.texto{
+  font-weight: 700;
+  height: 201px;
+  font-family: Cabin;
+}
+
+.container{
+  color: #373a3C;
+}
+
+hr{
+  width: 100%;
+	box-sizing:content-box;height:0;overflow:visible
+}
+.tiempo{
+  color: #373a3C;
+  font-weight: 700;
+  font-family: Cabin;
+  height: 20px;
+  margin-bottom: 1em;
+
+}
+.boton{
+  border: 1px solid #dddddd;
+}
+
+.carousel-indicators {
+  bottom: -50px;
+
+}
+.carousel-indicators li {
+  width: 13.1px;
+  height: 13.1px;
+  background-color: #373A3C;
+  border-radius: 50%;
+}
+
+.ingredientes{
+  font-weight: 400;
+  color: #373A3C;
+  font-size: 25px;
+}
+.recetas{
+  height: 20px;
+  color: #373A3C;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  font-family: Cabin;
+  font-weight: 700;
+}
+
+.textotitulo{
+  font-weight: 700;
+  color: #373A3C;
+}
+
+.newsletter{
+background: #dc3545;
+
+}
+
+.cambio{
+  font-family: Lobster;
+  font-weight: 400;
+  height: 60px;
+}
+.letras{
+  font-size: 20px;
+}
+
+.boton1{
+  border: 1px solid #dddddd;
+  font-family: Cabin;
+  font-weight: 400;
+}
+
+.footer{
+  font-family: Lobster;
+  height: 5em;
+  color: #FFFFFF;
+  background: #373A3C;
+  padding-top: 1em;
+
+}
+
+.textofinal{
+  padding-top: 10em;
+  padding-bottom: 10em;
+}
+
+
+
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip.active .tooltiptext {
+  visibility: visible;
+}
