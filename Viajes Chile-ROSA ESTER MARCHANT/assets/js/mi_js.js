@@ -2,9 +2,9 @@
 
    $(window).scroll(function() {
         if ($("#menu_sup").offset().Top > 100) {
-            $("#menu").addClass("menu_transp");
+            $("#menu_sup").addClass("menu_transp");
         } else {
-            $("#menu").removeClass("menu_transp");
+            $("#menu_sup").removeClass("menu_transp");
         }
     });
 
