@@ -28,3 +28,16 @@ $(document).ready(function() {
 
 
 });
+
+
+$("#video1").mouseenter(function(){
+  
+  $(this).attr("src",$(this).attr("src") + "?autoplay=1");
+});
+
+$("#video1").mouseleave(function(){
+  var src= $(this).attr("src");
+  var arr_str = src.split("?");
+  $(this).attr("src",arr_str[0]);
+});
+
