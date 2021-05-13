@@ -1,7 +1,7 @@
 // JavaScript Document
 
    $(window).scroll(function() {
-        if ($("#menu").offset().Top > 100) {
+        if ($("#menu_sup").offset().Top > 100) {
             $("#menu").addClass("menu_transp");
         } else {
             $("#menu").removeClass("menu_transp");
@@ -21,22 +21,6 @@ $(document).ready(function() {
     });
 
 
-    $(window).scroll(function() {
-
-        var scrollbarLocation = $(this).scrollTop();
-
-        scrollLink.each(function() {
-            var sectionOffset = $(this.hash).offset().top - 20;
-
-            if (sectionOffset <= scrollbarLocation) {
-                $(this).parent().addClass('transp');
-                $(this).parent().siblings().removeClass('transp');
-            }
-        });
-
-
-        $("#navbar").toggleClass('scrolled', $(this).scrollTop() > $('#link1').height());
-    });
 
 
     $('[data-toggle="tooltip"]').tooltip()
