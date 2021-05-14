@@ -26,6 +26,15 @@ h1{
 	color: white;
 	
 }
+
+h2{
+	
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	
+}
 .miheader{
 	height: auto;
 	 color: #707070;
@@ -44,7 +53,6 @@ height: 75px;
 
 .menu_transp {
    background-color:#5bc0de;
-  transition:background-color 500ms, color 500ms;
     
 }
 
@@ -55,6 +63,7 @@ width: 132px;
 height: 53px;
 text-align: left;	
 }
+/*
 
 .cuadro{
 	background-color: white;
@@ -66,6 +75,7 @@ text-align: left;
 	vertical-align: middle;
 
 }
+*/
 
 .columnas{
 	text-align: center;
@@ -89,13 +99,7 @@ text-align: left;
 
 
 
-.footer_cont{
-	width: 100%;
-    bottom: 0;
-    left: 0;
-	position: relative;
-	
-}
+
 
 
 
@@ -160,15 +164,6 @@ text-align: left;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.imag_footer {
-	margin-right:auto;
-    margin-left: auto;
-	margin-top: auto;
-	margin-bottom: auto;
-    height: 100%  ;
-	
-   
-}
 
 .tooltip-inner {
     background-color: #fff;color:black;
@@ -200,9 +195,17 @@ text-align: left;
 	height: 65px;
 	
 }
+
+/*------botones-----------*/
 .boton_leermas{
 	background-color: #424242;
 	color:white;
+}
+
+
+.btn-primary{
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+	border-color: transparent;
 }
 
 .btn-primary:hover {
@@ -210,12 +213,32 @@ text-align: left;
 	color:white;
 	border-color: aliceblue;
 }
-.btn-primary{
-	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
-}
 
+/*--------fin botones ---------*/
 
 .popover {
     background-color: black;
 }
+
+
+
+
+.footer_cont{
+	width: 100%;
+    bottom: 0;
+    left: 0;
+	position: relative;
+}
+
+/*
+.imag_footer {
+	margin-right:auto;
+    margin-left: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+    height: 100%  ;
+	
+   
+}*/
+
 
