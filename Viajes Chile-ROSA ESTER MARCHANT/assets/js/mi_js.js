@@ -1,3 +1,7 @@
+$('#modal1').on('hidden.bs.modal', function (e) {
+  // do something...
+  $('#modal1 iframe').attr("src", $("#modal1 iframe").attr("src"));
+});
 // JavaScript Document
 
    $(window).scroll(function() {
@@ -24,8 +28,12 @@ $(document).ready(function() {
 
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
+ 
 })
 
+
+
+/*$('.image-link').magnificPopup({type:'image'});*/
 
 /*------------autopaly videos al pasar el mosue---------*/
 /*---- video 1----*/
@@ -79,3 +87,5 @@ $("#video4").mouseleave(function(){
 });
 
 /*--------fin----autopaly videos al pasar el mosue---------*/
+
+
