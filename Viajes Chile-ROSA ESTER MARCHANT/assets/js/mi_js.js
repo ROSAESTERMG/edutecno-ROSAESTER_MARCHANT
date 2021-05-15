@@ -1,7 +1,6 @@
-
 // JavaScript Document
 
-	
+// --- SCROLL -----
    $(window).scroll(function() {
         if ($("#menu_sup").offset().Top > 100) {
             $("#menu_sup").addClass("menu_transp");
@@ -12,7 +11,7 @@
 
 
 
-
+//----TOOLTIP------
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
   var scrollLink = $('.scroll');
@@ -24,11 +23,14 @@ $(function () {
     });
 })
 	
-	
+//----- VISTA MODAL -----------	
 $('#modal1').on('hidden.bs.modal', function (e) {
   // do something...
   $('#modal1 iframe').attr("src", $("#modal1 iframe").attr("src"));
 });
-	
-	
 
+
+var $preLoader = $(".main-loader");
+$(window).load(function() {
+    $preLoader.fadeOut(""); // Animate loader off screen
+});

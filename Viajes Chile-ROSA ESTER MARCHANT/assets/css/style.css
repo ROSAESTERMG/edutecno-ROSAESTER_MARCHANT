@@ -35,7 +35,9 @@ h2{
 	color: white;
 	
 }
-
+row{
+	padding-bottom: 20px;
+}
 .miheader{
 	height: auto;
 	 color: #707070;
@@ -244,3 +246,15 @@ text-align: left;
   color: white;
   transform: rotateY(180deg);
 }
+
+
+.main-loader {
+  position: fixed;
+  left: 0px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(http://www.downgraf.com/wp-content/uploads/2014/09/01-progress.gif) center no-repeat white;
+  background-size:50px;
+}	
