@@ -29,8 +29,8 @@ $('#modal1').on('hidden.bs.modal', function (e) {
   $('#modal1 iframe').attr("src", $("#modal1 iframe").attr("src"));
 });
 
-
-var $preLoader = $(".main-loader");
-$(window).load(function() {
-    $preLoader.fadeOut(""); // Animate loader off screen
-});
+//-------------cargando pagina inicial ---//
+$(window).on("load", function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
