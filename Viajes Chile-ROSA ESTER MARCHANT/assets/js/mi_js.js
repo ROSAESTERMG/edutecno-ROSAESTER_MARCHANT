@@ -1,36 +1,52 @@
 // JavaScript Document
 
-// --- SCROLL -----
-   $(window).scroll(function() {
-        if ($("#menu_sup").offset().Top > 100) {
-            $("#menu_sup").addClass("menu_transp");
-        } else {
-            $("#menu_sup").removeClass("menu_transp");
-        }
-    });
+$(document).ready(function () {
+
+  $(window).scroll(function () {
+    if ($(document).scrollTop() > 100) {
+      $("nav").addClass("scrolled");
+    } else {
+      $("nav").removeClass("scrolled");
+    }
+  });
 
 
-
-//----TOOLTIP------
-$(function () {
   $('[data-toggle="tooltip"]').tooltip()
-  var scrollLink = $('.scroll');
-    scrollLink.click(function(e) {
-        e.preventDefault();
-        $('body,html').animate({
-            scrollTop: $(this.hash).offset().top
-        }, 1500);
+  //---- funcion que destaca sección seleccionada
+  $('li').click(function () {
+    $('li').each(function () {
+      //Recorremos todos los "li" para quitarles los fondos
+      $(this).css('background-color', '');
     });
-})
-	
-//----- VISTA MODAL -----------	
-$('#modal1').on('hidden.bs.modal', function (e) {
-  // do something...
+    //Se lo añadimos al que se le hace el click
+    $(this).css('background-color', '#387B8F');
+  });
+
+
+});
+
+
+//-----     vista modal de los videos -----------	
+$('#modal1').on('hidden.bs.modal', function () {
+
   $('#modal1 iframe').attr("src", $("#modal1 iframe").attr("src"));
 });
 
-//-------------cargando pagina inicial ---//
-$(window).on("load", function() {
-		// Animate loader off screen
-		$(".se-pre-con").fadeOut("slow");;
-	});
+$('#modal12').on('hidden.bs.modal', function () {
+  // do something...
+  $('#modal12 iframe').attr("src", $("#modal12 iframe").attr("src"));
+});
+$('#modal13').on('hidden.bs.modal', function () {
+  // do something...
+  $('#modal13 iframe').attr("src", $("#modal13 iframe").attr("src"));
+});
+$('#modal14').on('hidden.bs.modal', function () {
+  $('#modal14 iframe').attr("src", $("#modal14 iframe").attr("src"));
+});
+
+
+//---------- evento onload para así mostrar mensaje de carga pagina inicial ---//
+$(window).on("load", function () {
+  // Animate loader off screen
+  $(".se-pre-con").fadeOut("slow");
+});
