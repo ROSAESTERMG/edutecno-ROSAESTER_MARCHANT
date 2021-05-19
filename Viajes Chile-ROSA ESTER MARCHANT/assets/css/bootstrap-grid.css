@@ -1,9 +1,21 @@
 /*!
+<<<<<<< Updated upstream
  * Bootstrap Grid v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+=======
+ * Bootstrap Grid v4.0.0 (https://getbootstrap.com)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+@-ms-viewport {
+  width: device-width;
+}
+
+>>>>>>> Stashed changes
 html {
   box-sizing: border-box;
   -ms-overflow-style: scrollbar;
@@ -56,6 +68,10 @@ html {
 }
 
 .row {
+<<<<<<< Updated upstream
+=======
+  display: -webkit-box;
+>>>>>>> Stashed changes
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -83,6 +99,10 @@ html {
 .col-xl-auto {
   position: relative;
   width: 100%;
+<<<<<<< Updated upstream
+=======
+  min-height: 1px;
+>>>>>>> Stashed changes
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -90,12 +110,17 @@ html {
 .col {
   -ms-flex-preferred-size: 0;
   flex-basis: 0;
+<<<<<<< Updated upstream
+=======
+  -webkit-box-flex: 1;
+>>>>>>> Stashed changes
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-width: 100%;
 }
 
 .col-auto {
+<<<<<<< Updated upstream
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   width: auto;
@@ -103,148 +128,263 @@ html {
 }
 
 .col-1 {
+=======
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: none;
+}
+
+.col-1 {
+  -webkit-box-flex: 0;
+>>>>>>> Stashed changes
   -ms-flex: 0 0 8.333333%;
   flex: 0 0 8.333333%;
   max-width: 8.333333%;
 }
 
 .col-2 {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-flex: 0;
+>>>>>>> Stashed changes
   -ms-flex: 0 0 16.666667%;
   flex: 0 0 16.666667%;
   max-width: 16.666667%;
 }
 
 .col-3 {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-flex: 0;
+>>>>>>> Stashed changes
   -ms-flex: 0 0 25%;
   flex: 0 0 25%;
   max-width: 25%;
 }
 
 .col-4 {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-flex: 0;
+>>>>>>> Stashed changes
   -ms-flex: 0 0 33.333333%;
   flex: 0 0 33.333333%;
   max-width: 33.333333%;
 }
 
 .col-5 {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-flex: 0;
+>>>>>>> Stashed changes
   -ms-flex: 0 0 41.666667%;
   flex: 0 0 41.666667%;
   max-width: 41.666667%;
 }
 
 .col-6 {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-flex: 0;
+>>>>>>> Stashed changes
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   max-width: 50%;
 }
 
 .col-7 {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-flex: 0;
+>>>>>>> Stashed changes
   -ms-flex: 0 0 58.333333%;
   flex: 0 0 58.333333%;
   max-width: 58.333333%;
 }
 
 .col-8 {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-flex: 0;
+>>>>>>> Stashed changes
   -ms-flex: 0 0 66.666667%;
   flex: 0 0 66.666667%;
   max-width: 66.666667%;
 }
 
 .col-9 {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-flex: 0;
+>>>>>>> Stashed changes
   -ms-flex: 0 0 75%;
   flex: 0 0 75%;
   max-width: 75%;
 }
 
 .col-10 {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-flex: 0;
+>>>>>>> Stashed changes
   -ms-flex: 0 0 83.333333%;
   flex: 0 0 83.333333%;
   max-width: 83.333333%;
 }
 
 .col-11 {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-flex: 0;
+>>>>>>> Stashed changes
   -ms-flex: 0 0 91.666667%;
   flex: 0 0 91.666667%;
   max-width: 91.666667%;
 }
 
 .col-12 {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-flex: 0;
+>>>>>>> Stashed changes
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
 }
 
 .order-first {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-ordinal-group: 0;
+>>>>>>> Stashed changes
   -ms-flex-order: -1;
   order: -1;
 }
 
 .order-last {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-ordinal-group: 14;
+>>>>>>> Stashed changes
   -ms-flex-order: 13;
   order: 13;
 }
 
 .order-0 {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-ordinal-group: 1;
+>>>>>>> Stashed changes
   -ms-flex-order: 0;
   order: 0;
 }
 
 .order-1 {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-ordinal-group: 2;
+>>>>>>> Stashed changes
   -ms-flex-order: 1;
   order: 1;
 }
 
 .order-2 {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-ordinal-group: 3;
+>>>>>>> Stashed changes
   -ms-flex-order: 2;
   order: 2;
 }
 
 .order-3 {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-ordinal-group: 4;
+>>>>>>> Stashed changes
   -ms-flex-order: 3;
   order: 3;
 }
 
 .order-4 {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-ordinal-group: 5;
+>>>>>>> Stashed changes
   -ms-flex-order: 4;
   order: 4;
 }
 
 .order-5 {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-ordinal-group: 6;
+>>>>>>> Stashed changes
   -ms-flex-order: 5;
   order: 5;
 }
 
 .order-6 {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-ordinal-group: 7;
+>>>>>>> Stashed changes
   -ms-flex-order: 6;
   order: 6;
 }
 
 .order-7 {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-ordinal-group: 8;
+>>>>>>> Stashed changes
   -ms-flex-order: 7;
   order: 7;
 }
 
 .order-8 {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-ordinal-group: 9;
+>>>>>>> Stashed changes
   -ms-flex-order: 8;
   order: 8;
 }
 
 .order-9 {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-ordinal-group: 10;
+>>>>>>> Stashed changes
   -ms-flex-order: 9;
   order: 9;
 }
 
 .order-10 {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-ordinal-group: 11;
+>>>>>>> Stashed changes
   -ms-flex-order: 10;
   order: 10;
 }
 
 .order-11 {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-ordinal-group: 12;
+>>>>>>> Stashed changes
   -ms-flex-order: 11;
   order: 11;
 }
 
 .order-12 {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-ordinal-group: 13;
+>>>>>>> Stashed changes
   -ms-flex-order: 12;
   order: 12;
 }
@@ -297,133 +437,252 @@ html {
   .col-sm {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 1;
+>>>>>>> Stashed changes
     -ms-flex-positive: 1;
     flex-grow: 1;
     max-width: 100%;
   }
   .col-sm-auto {
+<<<<<<< Updated upstream
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     width: auto;
     max-width: 100%;
   }
   .col-sm-1 {
+=======
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+  }
+  .col-sm-1 {
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 8.333333%;
     flex: 0 0 8.333333%;
     max-width: 8.333333%;
   }
   .col-sm-2 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 16.666667%;
     flex: 0 0 16.666667%;
     max-width: 16.666667%;
   }
   .col-sm-3 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
   }
   .col-sm-4 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
   }
   .col-sm-5 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 41.666667%;
     flex: 0 0 41.666667%;
     max-width: 41.666667%;
   }
   .col-sm-6 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
   .col-sm-7 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 58.333333%;
     flex: 0 0 58.333333%;
     max-width: 58.333333%;
   }
   .col-sm-8 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 66.666667%;
     flex: 0 0 66.666667%;
     max-width: 66.666667%;
   }
   .col-sm-9 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
   }
   .col-sm-10 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 83.333333%;
     flex: 0 0 83.333333%;
     max-width: 83.333333%;
   }
   .col-sm-11 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 91.666667%;
     flex: 0 0 91.666667%;
     max-width: 91.666667%;
   }
   .col-sm-12 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
   }
   .order-sm-first {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 0;
+>>>>>>> Stashed changes
     -ms-flex-order: -1;
     order: -1;
   }
   .order-sm-last {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 14;
+>>>>>>> Stashed changes
     -ms-flex-order: 13;
     order: 13;
   }
   .order-sm-0 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 1;
+>>>>>>> Stashed changes
     -ms-flex-order: 0;
     order: 0;
   }
   .order-sm-1 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 2;
+>>>>>>> Stashed changes
     -ms-flex-order: 1;
     order: 1;
   }
   .order-sm-2 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 3;
+>>>>>>> Stashed changes
     -ms-flex-order: 2;
     order: 2;
   }
   .order-sm-3 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 4;
+>>>>>>> Stashed changes
     -ms-flex-order: 3;
     order: 3;
   }
   .order-sm-4 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 5;
+>>>>>>> Stashed changes
     -ms-flex-order: 4;
     order: 4;
   }
   .order-sm-5 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 6;
+>>>>>>> Stashed changes
     -ms-flex-order: 5;
     order: 5;
   }
   .order-sm-6 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 7;
+>>>>>>> Stashed changes
     -ms-flex-order: 6;
     order: 6;
   }
   .order-sm-7 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 8;
+>>>>>>> Stashed changes
     -ms-flex-order: 7;
     order: 7;
   }
   .order-sm-8 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 9;
+>>>>>>> Stashed changes
     -ms-flex-order: 8;
     order: 8;
   }
   .order-sm-9 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 10;
+>>>>>>> Stashed changes
     -ms-flex-order: 9;
     order: 9;
   }
   .order-sm-10 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 11;
+>>>>>>> Stashed changes
     -ms-flex-order: 10;
     order: 10;
   }
   .order-sm-11 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 12;
+>>>>>>> Stashed changes
     -ms-flex-order: 11;
     order: 11;
   }
   .order-sm-12 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 13;
+>>>>>>> Stashed changes
     -ms-flex-order: 12;
     order: 12;
   }
@@ -469,133 +728,252 @@ html {
   .col-md {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 1;
+>>>>>>> Stashed changes
     -ms-flex-positive: 1;
     flex-grow: 1;
     max-width: 100%;
   }
   .col-md-auto {
+<<<<<<< Updated upstream
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     width: auto;
     max-width: 100%;
   }
   .col-md-1 {
+=======
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+  }
+  .col-md-1 {
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 8.333333%;
     flex: 0 0 8.333333%;
     max-width: 8.333333%;
   }
   .col-md-2 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 16.666667%;
     flex: 0 0 16.666667%;
     max-width: 16.666667%;
   }
   .col-md-3 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
   }
   .col-md-4 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
   }
   .col-md-5 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 41.666667%;
     flex: 0 0 41.666667%;
     max-width: 41.666667%;
   }
   .col-md-6 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
   .col-md-7 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 58.333333%;
     flex: 0 0 58.333333%;
     max-width: 58.333333%;
   }
   .col-md-8 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 66.666667%;
     flex: 0 0 66.666667%;
     max-width: 66.666667%;
   }
   .col-md-9 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
   }
   .col-md-10 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 83.333333%;
     flex: 0 0 83.333333%;
     max-width: 83.333333%;
   }
   .col-md-11 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 91.666667%;
     flex: 0 0 91.666667%;
     max-width: 91.666667%;
   }
   .col-md-12 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
   }
   .order-md-first {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 0;
+>>>>>>> Stashed changes
     -ms-flex-order: -1;
     order: -1;
   }
   .order-md-last {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 14;
+>>>>>>> Stashed changes
     -ms-flex-order: 13;
     order: 13;
   }
   .order-md-0 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 1;
+>>>>>>> Stashed changes
     -ms-flex-order: 0;
     order: 0;
   }
   .order-md-1 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 2;
+>>>>>>> Stashed changes
     -ms-flex-order: 1;
     order: 1;
   }
   .order-md-2 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 3;
+>>>>>>> Stashed changes
     -ms-flex-order: 2;
     order: 2;
   }
   .order-md-3 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 4;
+>>>>>>> Stashed changes
     -ms-flex-order: 3;
     order: 3;
   }
   .order-md-4 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 5;
+>>>>>>> Stashed changes
     -ms-flex-order: 4;
     order: 4;
   }
   .order-md-5 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 6;
+>>>>>>> Stashed changes
     -ms-flex-order: 5;
     order: 5;
   }
   .order-md-6 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 7;
+>>>>>>> Stashed changes
     -ms-flex-order: 6;
     order: 6;
   }
   .order-md-7 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 8;
+>>>>>>> Stashed changes
     -ms-flex-order: 7;
     order: 7;
   }
   .order-md-8 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 9;
+>>>>>>> Stashed changes
     -ms-flex-order: 8;
     order: 8;
   }
   .order-md-9 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 10;
+>>>>>>> Stashed changes
     -ms-flex-order: 9;
     order: 9;
   }
   .order-md-10 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 11;
+>>>>>>> Stashed changes
     -ms-flex-order: 10;
     order: 10;
   }
   .order-md-11 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 12;
+>>>>>>> Stashed changes
     -ms-flex-order: 11;
     order: 11;
   }
   .order-md-12 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 13;
+>>>>>>> Stashed changes
     -ms-flex-order: 12;
     order: 12;
   }
@@ -641,133 +1019,252 @@ html {
   .col-lg {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 1;
+>>>>>>> Stashed changes
     -ms-flex-positive: 1;
     flex-grow: 1;
     max-width: 100%;
   }
   .col-lg-auto {
+<<<<<<< Updated upstream
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     width: auto;
     max-width: 100%;
   }
   .col-lg-1 {
+=======
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+  }
+  .col-lg-1 {
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 8.333333%;
     flex: 0 0 8.333333%;
     max-width: 8.333333%;
   }
   .col-lg-2 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 16.666667%;
     flex: 0 0 16.666667%;
     max-width: 16.666667%;
   }
   .col-lg-3 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
   }
   .col-lg-4 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
   }
   .col-lg-5 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 41.666667%;
     flex: 0 0 41.666667%;
     max-width: 41.666667%;
   }
   .col-lg-6 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
   .col-lg-7 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 58.333333%;
     flex: 0 0 58.333333%;
     max-width: 58.333333%;
   }
   .col-lg-8 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 66.666667%;
     flex: 0 0 66.666667%;
     max-width: 66.666667%;
   }
   .col-lg-9 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
   }
   .col-lg-10 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 83.333333%;
     flex: 0 0 83.333333%;
     max-width: 83.333333%;
   }
   .col-lg-11 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 91.666667%;
     flex: 0 0 91.666667%;
     max-width: 91.666667%;
   }
   .col-lg-12 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
   }
   .order-lg-first {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 0;
+>>>>>>> Stashed changes
     -ms-flex-order: -1;
     order: -1;
   }
   .order-lg-last {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 14;
+>>>>>>> Stashed changes
     -ms-flex-order: 13;
     order: 13;
   }
   .order-lg-0 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 1;
+>>>>>>> Stashed changes
     -ms-flex-order: 0;
     order: 0;
   }
   .order-lg-1 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 2;
+>>>>>>> Stashed changes
     -ms-flex-order: 1;
     order: 1;
   }
   .order-lg-2 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 3;
+>>>>>>> Stashed changes
     -ms-flex-order: 2;
     order: 2;
   }
   .order-lg-3 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 4;
+>>>>>>> Stashed changes
     -ms-flex-order: 3;
     order: 3;
   }
   .order-lg-4 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 5;
+>>>>>>> Stashed changes
     -ms-flex-order: 4;
     order: 4;
   }
   .order-lg-5 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 6;
+>>>>>>> Stashed changes
     -ms-flex-order: 5;
     order: 5;
   }
   .order-lg-6 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 7;
+>>>>>>> Stashed changes
     -ms-flex-order: 6;
     order: 6;
   }
   .order-lg-7 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 8;
+>>>>>>> Stashed changes
     -ms-flex-order: 7;
     order: 7;
   }
   .order-lg-8 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 9;
+>>>>>>> Stashed changes
     -ms-flex-order: 8;
     order: 8;
   }
   .order-lg-9 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 10;
+>>>>>>> Stashed changes
     -ms-flex-order: 9;
     order: 9;
   }
   .order-lg-10 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 11;
+>>>>>>> Stashed changes
     -ms-flex-order: 10;
     order: 10;
   }
   .order-lg-11 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 12;
+>>>>>>> Stashed changes
     -ms-flex-order: 11;
     order: 11;
   }
   .order-lg-12 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 13;
+>>>>>>> Stashed changes
     -ms-flex-order: 12;
     order: 12;
   }
@@ -813,133 +1310,252 @@ html {
   .col-xl {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 1;
+>>>>>>> Stashed changes
     -ms-flex-positive: 1;
     flex-grow: 1;
     max-width: 100%;
   }
   .col-xl-auto {
+<<<<<<< Updated upstream
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     width: auto;
     max-width: 100%;
   }
   .col-xl-1 {
+=======
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+  }
+  .col-xl-1 {
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 8.333333%;
     flex: 0 0 8.333333%;
     max-width: 8.333333%;
   }
   .col-xl-2 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 16.666667%;
     flex: 0 0 16.666667%;
     max-width: 16.666667%;
   }
   .col-xl-3 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
   }
   .col-xl-4 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
   }
   .col-xl-5 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 41.666667%;
     flex: 0 0 41.666667%;
     max-width: 41.666667%;
   }
   .col-xl-6 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
   .col-xl-7 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 58.333333%;
     flex: 0 0 58.333333%;
     max-width: 58.333333%;
   }
   .col-xl-8 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 66.666667%;
     flex: 0 0 66.666667%;
     max-width: 66.666667%;
   }
   .col-xl-9 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
   }
   .col-xl-10 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 83.333333%;
     flex: 0 0 83.333333%;
     max-width: 83.333333%;
   }
   .col-xl-11 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 91.666667%;
     flex: 0 0 91.666667%;
     max-width: 91.666667%;
   }
   .col-xl-12 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-flex: 0;
+>>>>>>> Stashed changes
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
   }
   .order-xl-first {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 0;
+>>>>>>> Stashed changes
     -ms-flex-order: -1;
     order: -1;
   }
   .order-xl-last {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 14;
+>>>>>>> Stashed changes
     -ms-flex-order: 13;
     order: 13;
   }
   .order-xl-0 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 1;
+>>>>>>> Stashed changes
     -ms-flex-order: 0;
     order: 0;
   }
   .order-xl-1 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 2;
+>>>>>>> Stashed changes
     -ms-flex-order: 1;
     order: 1;
   }
   .order-xl-2 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 3;
+>>>>>>> Stashed changes
     -ms-flex-order: 2;
     order: 2;
   }
   .order-xl-3 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 4;
+>>>>>>> Stashed changes
     -ms-flex-order: 3;
     order: 3;
   }
   .order-xl-4 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 5;
+>>>>>>> Stashed changes
     -ms-flex-order: 4;
     order: 4;
   }
   .order-xl-5 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 6;
+>>>>>>> Stashed changes
     -ms-flex-order: 5;
     order: 5;
   }
   .order-xl-6 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 7;
+>>>>>>> Stashed changes
     -ms-flex-order: 6;
     order: 6;
   }
   .order-xl-7 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 8;
+>>>>>>> Stashed changes
     -ms-flex-order: 7;
     order: 7;
   }
   .order-xl-8 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 9;
+>>>>>>> Stashed changes
     -ms-flex-order: 8;
     order: 8;
   }
   .order-xl-9 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 10;
+>>>>>>> Stashed changes
     -ms-flex-order: 9;
     order: 9;
   }
   .order-xl-10 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 11;
+>>>>>>> Stashed changes
     -ms-flex-order: 10;
     order: 10;
   }
   .order-xl-11 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 12;
+>>>>>>> Stashed changes
     -ms-flex-order: 11;
     order: 11;
   }
   .order-xl-12 {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-ordinal-group: 13;
+>>>>>>> Stashed changes
     -ms-flex-order: 12;
     order: 12;
   }
@@ -1010,11 +1626,19 @@ html {
 }
 
 .d-flex {
+<<<<<<< Updated upstream
+=======
+  display: -webkit-box !important;
+>>>>>>> Stashed changes
   display: -ms-flexbox !important;
   display: flex !important;
 }
 
 .d-inline-flex {
+<<<<<<< Updated upstream
+=======
+  display: -webkit-inline-box !important;
+>>>>>>> Stashed changes
   display: -ms-inline-flexbox !important;
   display: inline-flex !important;
 }
@@ -1042,10 +1666,18 @@ html {
     display: table-cell !important;
   }
   .d-sm-flex {
+<<<<<<< Updated upstream
+=======
+    display: -webkit-box !important;
+>>>>>>> Stashed changes
     display: -ms-flexbox !important;
     display: flex !important;
   }
   .d-sm-inline-flex {
+<<<<<<< Updated upstream
+=======
+    display: -webkit-inline-box !important;
+>>>>>>> Stashed changes
     display: -ms-inline-flexbox !important;
     display: inline-flex !important;
   }
@@ -1074,10 +1706,18 @@ html {
     display: table-cell !important;
   }
   .d-md-flex {
+<<<<<<< Updated upstream
+=======
+    display: -webkit-box !important;
+>>>>>>> Stashed changes
     display: -ms-flexbox !important;
     display: flex !important;
   }
   .d-md-inline-flex {
+<<<<<<< Updated upstream
+=======
+    display: -webkit-inline-box !important;
+>>>>>>> Stashed changes
     display: -ms-inline-flexbox !important;
     display: inline-flex !important;
   }
@@ -1106,10 +1746,18 @@ html {
     display: table-cell !important;
   }
   .d-lg-flex {
+<<<<<<< Updated upstream
+=======
+    display: -webkit-box !important;
+>>>>>>> Stashed changes
     display: -ms-flexbox !important;
     display: flex !important;
   }
   .d-lg-inline-flex {
+<<<<<<< Updated upstream
+=======
+    display: -webkit-inline-box !important;
+>>>>>>> Stashed changes
     display: -ms-inline-flexbox !important;
     display: inline-flex !important;
   }
@@ -1138,10 +1786,18 @@ html {
     display: table-cell !important;
   }
   .d-xl-flex {
+<<<<<<< Updated upstream
+=======
+    display: -webkit-box !important;
+>>>>>>> Stashed changes
     display: -ms-flexbox !important;
     display: flex !important;
   }
   .d-xl-inline-flex {
+<<<<<<< Updated upstream
+=======
+    display: -webkit-inline-box !important;
+>>>>>>> Stashed changes
     display: -ms-inline-flexbox !important;
     display: inline-flex !important;
   }
@@ -1170,31 +1826,59 @@ html {
     display: table-cell !important;
   }
   .d-print-flex {
+<<<<<<< Updated upstream
+=======
+    display: -webkit-box !important;
+>>>>>>> Stashed changes
     display: -ms-flexbox !important;
     display: flex !important;
   }
   .d-print-inline-flex {
+<<<<<<< Updated upstream
+=======
+    display: -webkit-inline-box !important;
+>>>>>>> Stashed changes
     display: -ms-inline-flexbox !important;
     display: inline-flex !important;
   }
 }
 
 .flex-row {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+>>>>>>> Stashed changes
   -ms-flex-direction: row !important;
   flex-direction: row !important;
 }
 
 .flex-column {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+>>>>>>> Stashed changes
   -ms-flex-direction: column !important;
   flex-direction: column !important;
 }
 
 .flex-row-reverse {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: reverse !important;
+>>>>>>> Stashed changes
   -ms-flex-direction: row-reverse !important;
   flex-direction: row-reverse !important;
 }
 
 .flex-column-reverse {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: reverse !important;
+>>>>>>> Stashed changes
   -ms-flex-direction: column-reverse !important;
   flex-direction: column-reverse !important;
 }
@@ -1214,6 +1898,7 @@ html {
   flex-wrap: wrap-reverse !important;
 }
 
+<<<<<<< Updated upstream
 .flex-fill {
   -ms-flex: 1 1 auto !important;
   flex: 1 1 auto !important;
@@ -1240,21 +1925,37 @@ html {
 }
 
 .justify-content-start {
+=======
+.justify-content-start {
+  -webkit-box-pack: start !important;
+>>>>>>> Stashed changes
   -ms-flex-pack: start !important;
   justify-content: flex-start !important;
 }
 
 .justify-content-end {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-pack: end !important;
+>>>>>>> Stashed changes
   -ms-flex-pack: end !important;
   justify-content: flex-end !important;
 }
 
 .justify-content-center {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-pack: center !important;
+>>>>>>> Stashed changes
   -ms-flex-pack: center !important;
   justify-content: center !important;
 }
 
 .justify-content-between {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-pack: justify !important;
+>>>>>>> Stashed changes
   -ms-flex-pack: justify !important;
   justify-content: space-between !important;
 }
@@ -1265,26 +1966,46 @@ html {
 }
 
 .align-items-start {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-align: start !important;
+>>>>>>> Stashed changes
   -ms-flex-align: start !important;
   align-items: flex-start !important;
 }
 
 .align-items-end {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-align: end !important;
+>>>>>>> Stashed changes
   -ms-flex-align: end !important;
   align-items: flex-end !important;
 }
 
 .align-items-center {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-align: center !important;
+>>>>>>> Stashed changes
   -ms-flex-align: center !important;
   align-items: center !important;
 }
 
 .align-items-baseline {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-align: baseline !important;
+>>>>>>> Stashed changes
   -ms-flex-align: baseline !important;
   align-items: baseline !important;
 }
 
 .align-items-stretch {
+<<<<<<< Updated upstream
+=======
+  -webkit-box-align: stretch !important;
+>>>>>>> Stashed changes
   -ms-flex-align: stretch !important;
   align-items: stretch !important;
 }
@@ -1351,18 +2072,38 @@ html {
 
 @media (min-width: 576px) {
   .flex-sm-row {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+>>>>>>> Stashed changes
     -ms-flex-direction: row !important;
     flex-direction: row !important;
   }
   .flex-sm-column {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+>>>>>>> Stashed changes
     -ms-flex-direction: column !important;
     flex-direction: column !important;
   }
   .flex-sm-row-reverse {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: reverse !important;
+>>>>>>> Stashed changes
     -ms-flex-direction: row-reverse !important;
     flex-direction: row-reverse !important;
   }
   .flex-sm-column-reverse {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+>>>>>>> Stashed changes
     -ms-flex-direction: column-reverse !important;
     flex-direction: column-reverse !important;
   }
@@ -1378,6 +2119,7 @@ html {
     -ms-flex-wrap: wrap-reverse !important;
     flex-wrap: wrap-reverse !important;
   }
+<<<<<<< Updated upstream
   .flex-sm-fill {
     -ms-flex: 1 1 auto !important;
     flex: 1 1 auto !important;
@@ -1399,18 +2141,34 @@ html {
     flex-shrink: 1 !important;
   }
   .justify-content-sm-start {
+=======
+  .justify-content-sm-start {
+    -webkit-box-pack: start !important;
+>>>>>>> Stashed changes
     -ms-flex-pack: start !important;
     justify-content: flex-start !important;
   }
   .justify-content-sm-end {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-pack: end !important;
+>>>>>>> Stashed changes
     -ms-flex-pack: end !important;
     justify-content: flex-end !important;
   }
   .justify-content-sm-center {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-pack: center !important;
+>>>>>>> Stashed changes
     -ms-flex-pack: center !important;
     justify-content: center !important;
   }
   .justify-content-sm-between {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-pack: justify !important;
+>>>>>>> Stashed changes
     -ms-flex-pack: justify !important;
     justify-content: space-between !important;
   }
@@ -1419,22 +2177,42 @@ html {
     justify-content: space-around !important;
   }
   .align-items-sm-start {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-align: start !important;
+>>>>>>> Stashed changes
     -ms-flex-align: start !important;
     align-items: flex-start !important;
   }
   .align-items-sm-end {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-align: end !important;
+>>>>>>> Stashed changes
     -ms-flex-align: end !important;
     align-items: flex-end !important;
   }
   .align-items-sm-center {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-align: center !important;
+>>>>>>> Stashed changes
     -ms-flex-align: center !important;
     align-items: center !important;
   }
   .align-items-sm-baseline {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-align: baseline !important;
+>>>>>>> Stashed changes
     -ms-flex-align: baseline !important;
     align-items: baseline !important;
   }
   .align-items-sm-stretch {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-align: stretch !important;
+>>>>>>> Stashed changes
     -ms-flex-align: stretch !important;
     align-items: stretch !important;
   }
@@ -1490,18 +2268,38 @@ html {
 
 @media (min-width: 768px) {
   .flex-md-row {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+>>>>>>> Stashed changes
     -ms-flex-direction: row !important;
     flex-direction: row !important;
   }
   .flex-md-column {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+>>>>>>> Stashed changes
     -ms-flex-direction: column !important;
     flex-direction: column !important;
   }
   .flex-md-row-reverse {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: reverse !important;
+>>>>>>> Stashed changes
     -ms-flex-direction: row-reverse !important;
     flex-direction: row-reverse !important;
   }
   .flex-md-column-reverse {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+>>>>>>> Stashed changes
     -ms-flex-direction: column-reverse !important;
     flex-direction: column-reverse !important;
   }
@@ -1517,6 +2315,7 @@ html {
     -ms-flex-wrap: wrap-reverse !important;
     flex-wrap: wrap-reverse !important;
   }
+<<<<<<< Updated upstream
   .flex-md-fill {
     -ms-flex: 1 1 auto !important;
     flex: 1 1 auto !important;
@@ -1538,18 +2337,34 @@ html {
     flex-shrink: 1 !important;
   }
   .justify-content-md-start {
+=======
+  .justify-content-md-start {
+    -webkit-box-pack: start !important;
+>>>>>>> Stashed changes
     -ms-flex-pack: start !important;
     justify-content: flex-start !important;
   }
   .justify-content-md-end {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-pack: end !important;
+>>>>>>> Stashed changes
     -ms-flex-pack: end !important;
     justify-content: flex-end !important;
   }
   .justify-content-md-center {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-pack: center !important;
+>>>>>>> Stashed changes
     -ms-flex-pack: center !important;
     justify-content: center !important;
   }
   .justify-content-md-between {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-pack: justify !important;
+>>>>>>> Stashed changes
     -ms-flex-pack: justify !important;
     justify-content: space-between !important;
   }
@@ -1558,22 +2373,42 @@ html {
     justify-content: space-around !important;
   }
   .align-items-md-start {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-align: start !important;
+>>>>>>> Stashed changes
     -ms-flex-align: start !important;
     align-items: flex-start !important;
   }
   .align-items-md-end {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-align: end !important;
+>>>>>>> Stashed changes
     -ms-flex-align: end !important;
     align-items: flex-end !important;
   }
   .align-items-md-center {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-align: center !important;
+>>>>>>> Stashed changes
     -ms-flex-align: center !important;
     align-items: center !important;
   }
   .align-items-md-baseline {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-align: baseline !important;
+>>>>>>> Stashed changes
     -ms-flex-align: baseline !important;
     align-items: baseline !important;
   }
   .align-items-md-stretch {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-align: stretch !important;
+>>>>>>> Stashed changes
     -ms-flex-align: stretch !important;
     align-items: stretch !important;
   }
@@ -1629,18 +2464,38 @@ html {
 
 @media (min-width: 992px) {
   .flex-lg-row {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+>>>>>>> Stashed changes
     -ms-flex-direction: row !important;
     flex-direction: row !important;
   }
   .flex-lg-column {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+>>>>>>> Stashed changes
     -ms-flex-direction: column !important;
     flex-direction: column !important;
   }
   .flex-lg-row-reverse {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: reverse !important;
+>>>>>>> Stashed changes
     -ms-flex-direction: row-reverse !important;
     flex-direction: row-reverse !important;
   }
   .flex-lg-column-reverse {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+>>>>>>> Stashed changes
     -ms-flex-direction: column-reverse !important;
     flex-direction: column-reverse !important;
   }
@@ -1656,6 +2511,7 @@ html {
     -ms-flex-wrap: wrap-reverse !important;
     flex-wrap: wrap-reverse !important;
   }
+<<<<<<< Updated upstream
   .flex-lg-fill {
     -ms-flex: 1 1 auto !important;
     flex: 1 1 auto !important;
@@ -1677,18 +2533,34 @@ html {
     flex-shrink: 1 !important;
   }
   .justify-content-lg-start {
+=======
+  .justify-content-lg-start {
+    -webkit-box-pack: start !important;
+>>>>>>> Stashed changes
     -ms-flex-pack: start !important;
     justify-content: flex-start !important;
   }
   .justify-content-lg-end {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-pack: end !important;
+>>>>>>> Stashed changes
     -ms-flex-pack: end !important;
     justify-content: flex-end !important;
   }
   .justify-content-lg-center {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-pack: center !important;
+>>>>>>> Stashed changes
     -ms-flex-pack: center !important;
     justify-content: center !important;
   }
   .justify-content-lg-between {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-pack: justify !important;
+>>>>>>> Stashed changes
     -ms-flex-pack: justify !important;
     justify-content: space-between !important;
   }
@@ -1697,22 +2569,42 @@ html {
     justify-content: space-around !important;
   }
   .align-items-lg-start {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-align: start !important;
+>>>>>>> Stashed changes
     -ms-flex-align: start !important;
     align-items: flex-start !important;
   }
   .align-items-lg-end {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-align: end !important;
+>>>>>>> Stashed changes
     -ms-flex-align: end !important;
     align-items: flex-end !important;
   }
   .align-items-lg-center {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-align: center !important;
+>>>>>>> Stashed changes
     -ms-flex-align: center !important;
     align-items: center !important;
   }
   .align-items-lg-baseline {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-align: baseline !important;
+>>>>>>> Stashed changes
     -ms-flex-align: baseline !important;
     align-items: baseline !important;
   }
   .align-items-lg-stretch {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-align: stretch !important;
+>>>>>>> Stashed changes
     -ms-flex-align: stretch !important;
     align-items: stretch !important;
   }
@@ -1768,18 +2660,38 @@ html {
 
 @media (min-width: 1200px) {
   .flex-xl-row {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+>>>>>>> Stashed changes
     -ms-flex-direction: row !important;
     flex-direction: row !important;
   }
   .flex-xl-column {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+>>>>>>> Stashed changes
     -ms-flex-direction: column !important;
     flex-direction: column !important;
   }
   .flex-xl-row-reverse {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: reverse !important;
+>>>>>>> Stashed changes
     -ms-flex-direction: row-reverse !important;
     flex-direction: row-reverse !important;
   }
   .flex-xl-column-reverse {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+>>>>>>> Stashed changes
     -ms-flex-direction: column-reverse !important;
     flex-direction: column-reverse !important;
   }
@@ -1795,6 +2707,7 @@ html {
     -ms-flex-wrap: wrap-reverse !important;
     flex-wrap: wrap-reverse !important;
   }
+<<<<<<< Updated upstream
   .flex-xl-fill {
     -ms-flex: 1 1 auto !important;
     flex: 1 1 auto !important;
@@ -1816,18 +2729,34 @@ html {
     flex-shrink: 1 !important;
   }
   .justify-content-xl-start {
+=======
+  .justify-content-xl-start {
+    -webkit-box-pack: start !important;
+>>>>>>> Stashed changes
     -ms-flex-pack: start !important;
     justify-content: flex-start !important;
   }
   .justify-content-xl-end {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-pack: end !important;
+>>>>>>> Stashed changes
     -ms-flex-pack: end !important;
     justify-content: flex-end !important;
   }
   .justify-content-xl-center {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-pack: center !important;
+>>>>>>> Stashed changes
     -ms-flex-pack: center !important;
     justify-content: center !important;
   }
   .justify-content-xl-between {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-pack: justify !important;
+>>>>>>> Stashed changes
     -ms-flex-pack: justify !important;
     justify-content: space-between !important;
   }
@@ -1836,22 +2765,42 @@ html {
     justify-content: space-around !important;
   }
   .align-items-xl-start {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-align: start !important;
+>>>>>>> Stashed changes
     -ms-flex-align: start !important;
     align-items: flex-start !important;
   }
   .align-items-xl-end {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-align: end !important;
+>>>>>>> Stashed changes
     -ms-flex-align: end !important;
     align-items: flex-end !important;
   }
   .align-items-xl-center {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-align: center !important;
+>>>>>>> Stashed changes
     -ms-flex-align: center !important;
     align-items: center !important;
   }
   .align-items-xl-baseline {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-align: baseline !important;
+>>>>>>> Stashed changes
     -ms-flex-align: baseline !important;
     align-items: baseline !important;
   }
   .align-items-xl-stretch {
+<<<<<<< Updated upstream
+=======
+    -webkit-box-align: stretch !important;
+>>>>>>> Stashed changes
     -ms-flex-align: stretch !important;
     align-items: stretch !important;
   }
@@ -1904,6 +2853,7 @@ html {
     align-self: stretch !important;
   }
 }
+<<<<<<< Updated upstream
 
 .m-0 {
   margin: 0 !important;
@@ -3716,4 +4666,6 @@ html {
     margin-left: auto !important;
   }
 }
+=======
+>>>>>>> Stashed changes
 /*# sourceMappingURL=bootstrap-grid.css.map */
