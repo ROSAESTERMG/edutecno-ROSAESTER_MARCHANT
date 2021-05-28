@@ -9,23 +9,41 @@ body {
 
 	
 }
-
+.col_parrafo{
+	width: 80%;
+	
+}
+.fecha_parrafo{
+	font-size: 18px;
+	font-family: 'Playfair Display';
+	font-weight: normal;
+	padding-top: 20px;
+	
+}
+.parrafo{
+	 line-height: 2.5em;
+	 font-family: 'roboto';
+	font-weight: lighter;
+	font-size: 16px;
+	padding-top: 20px;
+	
+}
 .todo{
 	width: 100%;
 	min-height: 100%;
     margin: auto;
-    	padding: 0px;
+    padding: 0px;
 	background-color: #fff;
 }
 
-li:focus, li:hover, li:active, pagina:hover {
+.navbar:focus, .navbar:hover, .navbar:active{
 /*  background-color: #387B8F;
   padding: 3px;
  
   transition: all .5s;
   margin-left: 15px;*/
 	 text-decoration: none;
-     color: white;
+     color: #DE8684;
 }
 /*hr {
   display: block;
@@ -39,15 +57,29 @@ h1 {
   font-family: 'Playfair Display';
   font-size: 50px;
   font-weight: bold;
+	font-style: italic;
   text-align: center;
   color: white;
+	
 }
 h2 {
   font-family: 'Playfair Display';
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
-  text-align: center;
-  color: white;
+  font-style: italic;
+  color: #121619;
+}
+h3 {
+  font-family: 'roboto';
+  font-size: 20px;
+  font-weight: bold;
+  font-weight: lighter;
+  color:#D76C69;
+}
+
+.foto_informacion{
+	float: right;
+	
 }
 row {
   padding-bottom: 20px;
@@ -97,6 +129,35 @@ row {
  
 }
 
+
+.grilla_informacion{
+	height: 230px;
+	width: 100%;
+	margin: auto;
+	display: grid;
+	grid-row:330px;
+	
+}
+.row_informacion{
+
+	height: 100%;
+	padding: 20px;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.col_informacion{
+  
+}
+.boton_gris{
+	border-radius:10px;
+	background-color: #707070;
+	margin : 10px;
+	color: #fff;
+}
+fas{
+	color: #fff;
+}
 .botones_i {
 border: 1px  hidden; /*anchura, estilo y color borde*/
 margin:1px;
@@ -122,6 +183,14 @@ font-family: 'Roboto', sans-serif; /*tipografía texto*/
 border-radius: 0px 15px 15px 0px; /*bordes redondos*/
 width: 55px;
 }
+
+.botones:hover, .botones_i:hover, .botones_d:hover ,.botones_act:hover{
+   text-decoration: none;
+     color: #fff;
+	background-color: #000;
+	
+}
+
 .botones {
 border: 1px  hidden; /*anchura, estilo y color borde*/
 margin:1px;
@@ -134,6 +203,9 @@ font-size: 16px;
 font-family: 'Roboto', sans-serif; /*tipografía texto*/
 border-radius: 0px; /*bordes redondos*/
 }
+
+
+
 .botones_act {
 border: 1px  hidden; /*anchura, estilo y color borde*/
 margin:1px;
