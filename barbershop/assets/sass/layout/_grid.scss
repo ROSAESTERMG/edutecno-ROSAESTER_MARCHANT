@@ -1,0 +1,57 @@
+.container_informacion{
+	display: grid;
+	height: 230px;
+	width: 80%;
+	margin: auto;
+	grid-row:230px;
+	justify-content: center;
+	
+}
+
+.row_informacion{
+
+	height: 100%;
+	padding: 20px;
+	display: grid;
+  align-items: center;
+  justify-content: center;
+	
+	
+}
+
+row {
+  padding-bottom: 20px;
+}
+
+
+.col3{
+ align-self: center;
+}
+
+.bigote_footer{
+	width: 122px;
+	vertical-align:middle;
+}
+
+
+@mixin divi($alto,$color){
+	background-color:$color;
+	height: $alto;
+	width: 100%;
+    left: 0;
+    bottom: 0;	
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+
+.divi_plomo	 {
+	@include divi(134px,$color_divplomo);
+  
+}
+
+.divi_negro	 {
+	@include divi(206px,$color_navbar_divfoo);
+
+}

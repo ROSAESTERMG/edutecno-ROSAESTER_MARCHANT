@@ -1,0 +1,16 @@
+//-------divi navegación ------
+.footer_cont {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: relative;
+}
+
+.divi_plomo	 {
+  @include divi(134px,$color_divplomo);
+}
+
+.divi_negro	 {
+   @include divi(206px,$color_navbar_divfoo);
+	
+}

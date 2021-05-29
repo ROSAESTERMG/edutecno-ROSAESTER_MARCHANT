@@ -1,0 +1,30 @@
+
+h1 {
+	@include textos($fuente_titulos,50px,$color_texto,$fontgrosor_negrita,$font_italic,center);
+	
+}
+h2 {
+	@include textos($fuente_titulos,30px,$color_navbar_divfoo,$fontgrosor_negrita,$font_italic,center);
+
+}
+h3 {
+	@include textos($fuente_pre,20px,$color_resaltado,$fontgrosor_light,$fontalto,center);
+  
+}
+
+.fecha_parrafo{
+	@include  textos($fuente_titulos,18px,$color_fondo,$fontalto,$fontalto,left);
+	padding-top: 20px;
+	
+}
+.parrafo{
+	 @include textos($fuente_pre,16px,$color_fondo,$fontgrosor_light,$fontalto,left);
+	
+	 line-height: 2.5em;
+padding-top: 20px;
+	
+}
+
+.fas{
+	color: $color_texto;
+}

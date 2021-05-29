@@ -1,0 +1,38 @@
+@mixin divi($alto,$color){
+	background-color:$color;
+	height: $alto;
+	width: 100%;
+    left: 0;
+    bottom: 0;	
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+@mixin botones_paginacion($bgcolor,$color,$font,$size,$borderround,$ancho){
+	border: 1px  hidden;
+	margin:1px;
+	padding: 10px; 
+	background-color: $bgcolor;
+	text-decoration: $font_decoracion;
+	font-family:$font;
+	font-size: $size;
+	border-radius:$borderround ; 
+	color:$color;
+	width: $ancho;
+	
+	
+}
+
+
+
+@mixin textos($font,$size,$color,$tipo,$estilo,$alineacion)
+{
+font-family: $font;
+  font-size: $size;
+	color: $color;
+  font-weight: $tipo;
+	font-style: $estilo;
+  text-align: $alineacion;
+  
+}

@@ -1,7 +1,10 @@
 body{
-    margin: 0px;
-	background-color: $color_fondo;
+   background-color: $color_fondo;
+	
+}
+html {
+  height: 100%;
+	font-size: 16px;
 	font-family: $fuente_pre;
-	font-size: : $fuentesize_pre;
-
+	
 }

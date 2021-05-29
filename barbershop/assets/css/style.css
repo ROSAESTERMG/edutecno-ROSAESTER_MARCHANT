@@ -130,24 +130,27 @@ row {
 }
 
 
-.grilla_informacion{
-	height: 230px;
-	width: 100%;
-	margin: auto;
+.container_informacion{
 	display: grid;
-	grid-row:330px;
+	height: 230px;
+	width: 80%;
+	margin: auto;
+	grid-row:230px;
+	justify-content: center;
 	
 }
 .row_informacion{
 
 	height: 100%;
 	padding: 20px;
-	display: flex;
+	display: grid;
   align-items: center;
   justify-content: center;
+	
+	
 }
-.col_informacion{
-  
+.col3{
+ align-self: center;
 }
 .boton_gris{
 	border-radius:10px;
@@ -155,7 +158,7 @@ row {
 	margin : 10px;
 	color: #fff;
 }
-fas{
+.fas{
 	color: #fff;
 }
 .botones_i {
@@ -241,7 +244,7 @@ border-radius: 0px; /*bordes redondos*/
   position: relative;
 }
 /*------- fin css del area footer ----*/
-/*---- oculta la sección de quienes somos al ser visto en dispositivos moviles----*/
+
 @media only screen and (max-width: 576px) {
   .section_somos {
     display: none;
@@ -250,14 +253,14 @@ border-radius: 0px; /*bordes redondos*/
   
 	
    
-
+/*---
 .tooltip-inner {
   background-color: #fff;
   color: black;
   font-size: 14px;
 }
 
-/*--- formato a las tarjtetas ---*/
+ formato a las tarjtetas 
 .card-title {
   color: white;
   text-align: center;
@@ -274,7 +277,10 @@ border-radius: 0px; /*bordes redondos*/
 }
 .card_titulo {
   height: 65px;
-}
+}---*/
+
+
+
 /*------botones-----------*/
 .boton_leermas {
   background-color: #424242;
@@ -290,11 +296,11 @@ border-radius: 0px; /*bordes redondos*/
   color: white;
   border-color: aliceblue;
 }
------fin botones ---------*/
+-----fin botones -
 .popover {
   background-color: black;
 }
-
+--------*/
 /*-----.boton_ico {
   color: white;
   font-size: 30px;

@@ -1,5 +1,35 @@
 //colores
-$color_fondo: 'white';
-$fuente_pre:'Roboto';
-$fuentesize_pre:'12px';
-$fuente_titulos:'Playfair Display';
+$color_fondo: #000;
+$color_texto: #fff;
+$color_resaltado:#DE8684;;
+$color_navbar_divfoo: #121619;
+$color_divplomo: #E6E7E7;
+$color_botongris: #707070;
+$color_leermas:#424242;
+
+
+//medidas divi
+$med_parrafos:80%;
+
+
+// tipografias
+$fuente_titulos:'Playfair Display',sans-serif;
+$fuente_pre:'Roboto',sans-serif;
+
+//tamaños letras
+$fontize_h1:50px;
+$fontize_h2:30px;
+$fontize_h3:20px;
+$fontize_pre:12px;
+$fontsize_parrafo:16px;
+
+
+$fontalto:normal;
+$fontgrosor_light:lighter;
+$fontgrosor_negrita:bold;
+
+$font_italic:italic;
+$fontinterlineado:2.5em;
+
+//varios letras
+$font_decoracion:none;

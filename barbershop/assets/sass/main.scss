@@ -1,7 +1,7 @@
 @import
-   'abstracts/functions',
+  // 'abstracts/functions',
    'abstracts/mixins',
-   'abstracts/placeholders',
+ // 'abstracts/placeholders',
    'abstracts/variables';
 
 @import
@@ -9,27 +9,27 @@
    'base/typography';
 
 @import
-   'components/buttons',
-   'components/carousel',
-   'components/cover',
-   'components/dropdown';
+   'components/buttons';
+ //  'components/carousel',
+ //  'components/cover',
+ //  'components/dropdown';
 
 @import
-   'layout/footer',
-   'layout/forms',
-   'layout/grid',
-   'layout/header',
-   'layout/navigation',
-   'layout/sidebar';
+  // 'layout/footer',
+  // 'layout/forms',
+  'layout/grid',
+  'layout/header',
+   'layout/navigation';
+  // 'layout/sidebar';
 
-@import
-   'pages/contact',
-   'pages/home';
+//@import
+  // 'pages/contact',
+ //  'pages/home';
 
-@import
-   'themes/admin',
-   'themes/theme';
+//@import
+  // 'themes/admin',
+  // 'themes/theme';
 
-@import
-   'vendors/bootstrap',
-   'vendors/jquery-ui';
+//@import
+ //  'vendors/bootstrap',
+  // 'vendors/jquery-ui';
