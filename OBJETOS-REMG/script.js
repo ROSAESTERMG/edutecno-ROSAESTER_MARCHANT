@@ -1,13 +1,13 @@
-Persona.prototype.agregar_redsocial = function(red_social){
-this.redes_sociales.push(red_social);
-}
 // JavaScript Document
 var $texto = '';
 
 
 //--------------------- consultorio ----------------------//
 function Consultorio(nombre, paciente) {
-        var _nombre = nombre;
+     this.nombre = nombre;
+  this.paciente = paciente || [];
+    
+   /*     var _nombre = nombre;
         var _paciente = paciente || [];
     
         Object.defineProperty(this, "_getNombre", {
@@ -33,11 +33,11 @@ function Consultorio(nombre, paciente) {
         set: function (paciente) {
         _paciente = paciente;
         }
-        });    
+        }); */   
 }
 
 
-
+/*
 Consultorio.prototype.getNombre = function(){
 return this._getNombre;
 };
@@ -51,7 +51,7 @@ return this._getPaciente;
 Consultorio.prototype._setPaciente = function(paciente){
 this._setPaciente = paciente;
 };
-
+*/
 //---------------------fin consultorio-----------------------------//
 
 
@@ -120,28 +120,28 @@ function Paciente(nombre, edad, rut, diagnostico) {
 
 
 
-Paciente.prototype.getNombre = function(){
+Paciente.prototype.getNombre = function(nombre){
 return this._getNombre;
 };
 Paciente.prototype._setNombre = function(nombre){
 this._setNombre = nombre;
 };
 
-Paciente.prototype.getRut = function(){
+Paciente.prototype.getRut = function(rut){
 return this._getRut;
 };
 Paciente.prototype._setRut = function(rut){
 this._setRut = rut;
 };
 
-Paciente.prototype.getEdad = function(){
+Paciente.prototype.getEdad = function(edad){
 return this._getEdad;
 };
 Paciente.prototype._setEdad = function(edad){
 this._setEdad = edad;
 };
 
-Paciente.prototype.getDiag = function(){
+Paciente.prototype.getDiag = function(diagnostico){
 return this._getDiag;
 };
 Paciente.prototype._setDiag = function(diagnostico){
@@ -157,8 +157,8 @@ Consultorio.prototype.setAgregarPaciente = function (paciente_nuevo) {
 
 var paciente1 = new Paciente('Marcelo', 20, '111-1', 'ANEMIA');
 var consultorio1 = new Consultorio('Arica', [paciente1]);
-console.log(paciente1.getNombre());
-console.log(consultorio1.getNombre());
+
+
 
 
 //----------- guardar pacientes ------------------//
@@ -207,23 +207,26 @@ const guardar_pacientes = () => {
 const mostrar_pacientes = () => {
   var divr = document.getElementById("div_mostrar")
 
-  var pac = [];
+  //var pac = [];
   var $i = 0;
 
-  $.each(consultorio1.paciente, (index, value) => {
+ /*$.each(consultorio1.paciente, (index, value) => {
 
     pac = [$i][0] = index;
     pac = [$i][1] = value;
     $i++;
 
-  });
+  });*/
 
   $texto = '<br><br><p ">-----------------  LISTADO DE PACIENTES -------------- </p>';
 
-  for ($i = 0; $i < consultorio1['paciente'].length; $i++) {
-    $texto += '<p>NOMBRE:' + consultorio1['paciente'][$i].nombre + ', EDAD:' + consultorio1['paciente'][$i].edad + ', RUT:';
-    $texto += consultorio1['paciente'][$i].rut + ', DIAGNOSTICO:' + consultorio1['paciente'][$i].diagnotico + '</p>';
-    // console.log('111:'+consultorio1['paciente'][$i].nombre);
+//  for ($i = 0; $i < consultorio1['paciente'].length; $i++) {
+      for ($i = 0; $i < consultorio1.paciente.length; $i++) {
+    //$texto += '<p>NOMBRE:' + consultorio1['paciente'][$i].nombre + ', EDAD:' + consultorio1['paciente'][$i].edad + ', RUT:';
+     $texto += '<p>NOMBRE:' + consultorio1.paciente[$i].getNombre() + ', EDAD:' + consultorio1.paciente[$i].getEdad() + ', RUT:';   
+   // $texto += consultorio1['paciente'][$i].rut + ', DIAGNOSTICO:' + consultorio1['paciente'][$i].diagnotico + '</p>';
+        $texto += consultorio1.paciente[$i].getRut() + ', DIAGNOSTICO:' + consultorio1.paciente[$i].getDiag() + '</p>';
+   console.log(consultorio1.paciente[$i].nombre);
   }
 
   document.getElementById("div_mostrar").innerHTML = $texto;
@@ -233,11 +236,24 @@ const mostrar_pacientes = () => {
 //--------------------- buscar paciente ---------------------//
 const buscar_pacientes = () => {
     var abuscar = document.getElementById("nombre2_p").value
-    const resultado = consultorio1['paciente'].find(pac => pac.nombre === abuscar);
-
-    if (resultado !== 'undefined') {
+   // const resultado = consultorio1['paciente'].find(pac => pac.nombre === abuscar);
+ const resultado = consultorio1.paciente.find(
+    pac => pac.getNombre() === abuscar
+  );
+    if (resultado === undefined ){} 
+    else
+    {
+        alert('paso '+resultado )
       $texto = '<br><br><p ">-----------------  PERSONA ENCONTRADA -------------- </p>';
-      $texto += resultado.nombre + ', EDAD:' + resultado.edad + ', RUT:' + resultado.rut + ', DIAGNOSTICO:' + resultado.diagnotico;
+     // $texto += resultado.nombre + ', EDAD:' + resultado.edad + ', RUT:' + resultado.rut + ', DIAGNOSTICO:' + resultado.diagnotico;
+      $texto +=
+      resultado.getNombre() +
+      ", EDAD:" +
+      resultado.getEdad() +
+      ", RUT:" +
+      resultado.getRut() +
+      ", DIAGNOSTICO:" +
+      resultado.getDiag();
       document.getElementById("p_buscar").innerHTML = $texto;
     }
 }
