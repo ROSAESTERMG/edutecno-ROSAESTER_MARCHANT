@@ -18,18 +18,34 @@ var consultorio1 = new Consultorio('Arica', [paciente1]);
 
 
 //----------- guardar pacientes ------------------//
-const guardar = () => {
+let guardar = document.getElementById('guardar');
+guardar.addEventListener('click',guardarpersona);
 
-  var n1 = document.getElementById('nombre').value;
-  var m1 = parseInt(document.getElementById('monto').value);
-  var d1 = parseInt(document.getElementById('deducible').value);
- 
+function guardarpersona() {
+event.preventDefault();
+  let n1 = document.getElementById('nombre').value;
+  let m1 = parseInt(document.getElementById('monto').value);
+  let d1 = parseInt(document.getElementById('deducible').value);
+    
+ if (m1 && d1 > 0) {
 
-  
-   let impuestox = new Impuestos(m1,d1);
+let impuestox = new Impuestos(m1,d1);
 console.log(impuestox.monto);
-
 console.log(impuestox.deducible); 
+     
+let areaCirculo = new Circunferencia(radio);
+div_mostrar.innerHTML = areaCirculo.area();
+
+}else {
+div_mostrar.innerHTML = `Debe ingresar un número... `;
+div_mostrar.innerHTML = ` y este debe ser mayor que cero`;
+};
+
+    
+    
+    
+    
+
    
     
  /*
