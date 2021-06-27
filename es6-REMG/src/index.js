@@ -1,20 +1,18 @@
 // JavaScript Document
-//import Persona from 'persona.js';
-//import Impuestos from 'impuesto.js';
-import * as Persona from 'persona';
-import * as Impuestos from 'impuesto';
+import Persona from './persona.js';
+import Impuestos from './impuestos.js';
 
 var $texto = '';
 
 //----------------fin ----paciente----------------------------//
-
+/*
 Consultorio.prototype.setAgregarPaciente = function (paciente_nuevo) {
   this.paciente.push(paciente_nuevo);
 }
 
 var paciente1 = new Paciente('Marcelo', 20, '111-1', 'ANEMIA');
 var consultorio1 = new Consultorio('Arica', [paciente1]);
-
+*/
 
 
 
@@ -47,7 +45,7 @@ console.log(impuestox.deducible);
 
 
 //----------- mostrar pacientes ------------------//
-const mostrar_pacientes = () => {
+const mostrar= () => {
   var divr = document.getElementById("div_mostrar")
   var $i = 0;
 
