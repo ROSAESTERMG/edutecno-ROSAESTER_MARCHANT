@@ -16,7 +16,7 @@ this._monto = nuevo_monto;
 }
     
 //--------------deducible--------------
- this.deducible = deducible;
+this.deducible = deducible;
 }
 get deducible(){
 return this._deducible;

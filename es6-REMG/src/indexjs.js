@@ -28,42 +28,27 @@ var consultorio1 = new Consultorio('Arica', [paciente1]);
 //----------- guardar pacientes ------------------//
 const guardar_pacientes = () => {
 
-  var an = document.getElementById('nombre_p').value;
-  var ae = parseInt(document.getElementById('edad_p').value);
-  var ar = document.getElementById('rut_p').value;
-  var ad = document.getElementById('diag_p').value;
-  if (an.length == 0) {
-    alert('Nombre Vacío');
-    document.getElementById("nombre_p").focus();
-    return;
-  }
+  var n1 = document.getElementById('nombre').value;
+  var m1 = parseInt(document.getElementById('monto').value);
+  var d1 = parseInt(document.getElementById('deducible').value);
+ 
 
-
-  if (isNaN(ae) || ae < 0) {
-    alert('Edad debe ser mayor o igual a 0');
-    document.getElementById("edad_p").focus();
-    return;
-  }
-  if (ar.length == 0) {
-    alert('Rut Vacío');
-    document.getElementById("rut_p").focus();
-    return;
-  }
-  if (ad.length == 0) {
-    alert('Diagnóstico Vacío');
-    document.getElementById("diag_p").focus();
-    return;
-  }
-
-  var pacienteX = new Paciente(an, ae, ar, ad);
-  consultorio1.setAgregarPaciente(pacienteX);
-//var new Consultorio('Arica', [paciente1]);
+   let perro1 = new Perro('Pastor Aleman');
+console.log(perro1.raza);
+perro1.raza = 'Pastor Belga';
+console.log(perro1.raza); 
     
-  document.getElementById("nombre_p").value = '';
-  document.getElementById("edad_p").value = '';
-  document.getElementById("rut_p").value = '';
-  document.getElementById("diag_p").value = '';
-  alert('paciente ingresado');
+    
+
+
+  var impuestox = new Pers(m1,d1);
+  persona1.setAgregarPersona(impuestox);
+
+    
+  document.getElementById("nombre").value = '';
+  document.getElementById("monto").value = '';
+  document.getElementById("deducible").value = '';
+  alert('datos ingresados');
 }
 
 
