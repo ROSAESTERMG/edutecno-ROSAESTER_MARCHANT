@@ -1,7 +1,8 @@
 // JavaScript Document
-import Persona from 'persona.js';
-import Impuestos from 'impuesto.js';
-
+//import Persona from 'persona.js';
+//import Impuestos from 'impuesto.js';
+import * as Persona from 'persona';
+import * as Impuestos from 'impuesto';
 
 var $texto = '';
 
@@ -18,7 +19,7 @@ var consultorio1 = new Consultorio('Arica', [paciente1]);
 
 
 //----------- guardar pacientes ------------------//
-const guardar_pacientes = () => {
+const guardar = () => {
 
   var n1 = document.getElementById('nombre').value;
   var m1 = parseInt(document.getElementById('monto').value);
