@@ -1,4 +1,5 @@
 // JavaScript Document
+
 import Persona from './persona.js';
 import Impuestos from './impuestos.js';
 
