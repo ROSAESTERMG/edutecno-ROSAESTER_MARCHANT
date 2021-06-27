@@ -28,13 +28,9 @@ event.preventDefault();
   let d1 = parseInt(document.getElementById('deducible').value);
     
  if (m1 && d1 > 0) {
-
-let impuestox = new Impuestos(m1,d1);
-console.log(impuestox.monto);
-console.log(impuestox.deducible); 
-     
-let areaCirculo = new Circunferencia(radio);
-div_mostrar.innerHTML = areaCirculo.area();
+ 
+let resultado = new Impuestos(m1,d1);
+div_mostrar.innerHTML = Impuestos.calcular();
 
 }else {
 div_mostrar.innerHTML = `Debe ingresar un número... `;
