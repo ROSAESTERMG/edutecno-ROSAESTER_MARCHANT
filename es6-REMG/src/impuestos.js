@@ -25,7 +25,7 @@ this._deducible = nuevo_deducible;
  */   
     
 calcular(){
-return (((this.monto * this.deducible)*21)100;
+return (((this.monto * this.deducible)*21)/100);
 }
     
 }

@@ -17,30 +17,30 @@ var Impuestos = /*#__PURE__*/function () {
   function Impuestos(monto, deducible) {
     _classCallCheck(this, Impuestos);
 
-    this._monto = monto;
+    this.monto = monto;
     this.deducible = deducible;
   }
+  /*    
+  get monto(){
+  return this._monto;
+  }
+  set monto(nuevo_monto){
+  this._monto = nuevo_monto;
+  }
+      
+  get deducible(){
+  return this._deducible;
+  }
+  set deducible(nuevo_deducible){
+  this._deducible = nuevo_deducible;
+  }   
+   */
+
 
   _createClass(Impuestos, [{
-    key: "monto",
-    get: function get() {
-      return this._monto;
-    },
-    set: function set(nuevo_monto) {
-      this.monto = nuevo_monto;
-    }
-  }, {
-    key: "deducible",
-    get: function get() {
-      return this._deducible;
-    },
-    set: function set(nuevo_deducible) {
-      this._deducible = nuevo_deducible;
-    }
-  }, {
     key: "calcular",
     value: function calcular() {
-      return monto * deducible * 0, 21;
+      return this.monto * this.deducible * 21 / 100;
     }
   }]);
 
