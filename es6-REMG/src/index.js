@@ -15,8 +15,10 @@ event.preventDefault();
     
  if (m1 && d1 > 0) {
  let resultado = new Impuestos(m1,d1);
- let resultado = new Impuestos(m1,d1);
-div_mostrar.innerHTML =' Sr(a) : <br>Monto Bruto:'+resultado.monto+'  <br>Deducible:'+resultado.deducible+' <br>*** TOTAL IMPUESTO:'+resultado.calcular()+' ***';
+let persona1 = new Persona(n1, [resultado]);
+     console.log(persona1);
+     
+div_mostrar.innerHTML =' Sr(a) : '+persona1.nombre+'<br>Monto Bruto:'+resultado.monto+'  <br>Deducible:'+resultado.deducible+' <br>*** TOTAL IMPUESTO:'+resultado.calcular()+' ***';
 }
 else {
 div_mostrar.innerHTML = 'Debe ingresar un número... ';

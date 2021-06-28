@@ -7,18 +7,6 @@ var _impuestos = _interopRequireDefault(require("./impuestos.js"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 // JavaScript Document
-var $texto = ''; //----------------fin ----paciente----------------------------//
-
-/*
-Consultorio.prototype.setAgregarPaciente = function (paciente_nuevo) {
-  this.paciente.push(paciente_nuevo);
-}
-
-var paciente1 = new Paciente('Marcelo', 20, '111-1', 'ANEMIA');
-var consultorio1 = new Consultorio('Arica', [paciente1]);
-*/
-//----------- guardar pacientes ------------------//
-
 var guardar = document.getElementById('guardar');
 guardar.addEventListener('click', guardarpersona);
 
@@ -30,7 +18,9 @@ function guardarpersona() {
 
   if (m1 && d1 > 0) {
     var resultado = new _impuestos["default"](m1, d1);
-    div_mostrar.innerHTML = resultado.calcular();
+    var persona1 = new _persona["default"](n1, [resultado]);
+    console.log(persona1);
+    div_mostrar.innerHTML = ' Sr(a) : ' + persona1.nombre + '<br>Monto Bruto:' + resultado.monto + '  <br>Deducible:' + resultado.deducible + ' <br>*** TOTAL IMPUESTO:' + resultado.calcular() + ' ***';
   } else {
     div_mostrar.innerHTML = 'Debe ingresar un número... ';
     div_mostrar.innerHTML = ' y este debe ser mayor que cero';

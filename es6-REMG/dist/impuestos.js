@@ -20,22 +20,6 @@ var Impuestos = /*#__PURE__*/function () {
     this.monto = monto;
     this.deducible = deducible;
   }
-  /*    
-  get monto(){
-  return this._monto;
-  }
-  set monto(nuevo_monto){
-  this._monto = nuevo_monto;
-  }
-      
-  get deducible(){
-  return this._deducible;
-  }
-  set deducible(nuevo_deducible){
-  this._deducible = nuevo_deducible;
-  }   
-   */
-
 
   _createClass(Impuestos, [{
     key: "calcular",
@@ -45,7 +29,6 @@ var Impuestos = /*#__PURE__*/function () {
   }]);
 
   return Impuestos;
-}(); // (monto_bruto_anual − deducciones) * 21%)
-
+}();
 
 exports["default"] = Impuestos;
