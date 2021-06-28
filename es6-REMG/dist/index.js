@@ -30,7 +30,7 @@ function guardarpersona() {
 
   if (m1 && d1 > 0) {
     var resultado = new _impuestos["default"](m1, d1);
-    div_mostrar.innerHTML = _impuestos["default"].calcular();
+    div_mostrar.innerHTML = resultado.calcular();
   } else {
     div_mostrar.innerHTML = 'Debe ingresar un número... ';
     div_mostrar.innerHTML = ' y este debe ser mayor que cero';
