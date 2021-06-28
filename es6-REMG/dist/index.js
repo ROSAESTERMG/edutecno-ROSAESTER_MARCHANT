@@ -24,9 +24,9 @@ guardar.addEventListener('click', guardarpersona);
 
 function guardarpersona() {
   event.preventDefault();
-  var n1 = document.getElementById('nombre').value;
-  var m1 = parseInt(document.getElementById('monto').value);
-  var d1 = parseInt(document.getElementById('deducible').value);
+  var n1 = document.getElementById('nombre_p').value;
+  var m1 = parseInt(document.getElementById('monto_p').value);
+  var d1 = parseInt(document.getElementById('deducible_p').value);
 
   if (m1 && d1 > 0) {
     var resultado = new _impuestos["default"](m1, d1);
@@ -37,8 +37,8 @@ function guardarpersona() {
   }
 
   ;
-  document.getElementById("nombre").value = '';
-  document.getElementById("monto").value = '';
-  document.getElementById("deducible").value = '';
+  document.getElementById("nombre_p").value = '';
+  document.getElementById("monto_p").value = '';
+  document.getElementById("deducible_p").value = '';
   alert('datos ingresados');
 }
