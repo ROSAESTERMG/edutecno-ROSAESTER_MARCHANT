@@ -37,23 +37,38 @@ console.log('El nombre del dueño es: ${this.nombre}. El domicilio es: ${this.do
 }
 
 
+
+
+
+//------------------------------------------
 let guardar = document.getElementById('guardar');
 guardar.addEventListener('click',guardarpersona);
 
+//------------------------------------------
 function guardarpersona() {
-	    var valor = document.getElementById("TIPO");
-        var valor = valor.value;
-    alert(valor);
- if (valor=='GATO'){
-const gato = new Animal_g(valor);console.log(gato.tipo);
+	    let valor = document.getElementById("TIPO").value;
+       // var valor = valor.value;
+
+let n1 = document.getElementById('nom_due').value;
+let n2 = document.getElementById('tele').value;
+    let n3 = document.getElementById('domi').value;
+    let n4 = document.getElementById('nom_masc').value;
+    let n6 = document.getElementById('motivo').value;
+    
+    if (valor=='GATO'){
+
+    const gato = new Gatos(valor,n4, n6);
+     console.log(gato.tipo);
  }
 else
    if (valor=='PERRO'){
-const perro = new Animal_p(valor); console.log(perro.tipo);
+const perro = new Perros(valor,n4, n6);
+       console.log(perro.tipo);
  }
 else
     if (valor=='CONEJO'){
-const conejo = new Animal_c(valor);console.log(conejo.tipo);
+const conejo = new Conejos(valor,n4, n6);
+        console.log(conejo.tipo);
  }
 
 
@@ -69,8 +84,8 @@ document.getElementById('raza').value = '';
 
 
 
-//--------------gato------
-class Animal_g extends Dueno {
+//--------------Animal------
+class Animal extends Dueno {
 constructor( tipo) {
 super( tipo)
 this._tipo = tipo;
@@ -84,45 +99,12 @@ this._tipo = nuevo_tipo;
 }
 }
 
-
-
-//--------------perro------
-class Animal_p extends Dueno {
-constructor( tipo) {
-super( tipo)
-this._tipo = tipo;
-}
-    
-
-get tipo(){
-return this._tipo
-}
-set tipo(nuevo_tipo){
-this._tipo = nuevo_tipo;
-}
-}
-
-//--------------conejo------
-class Animal_c extends Dueno {
-constructor( tipo) {
-super( tipo)
-this._tipo = tipo;
-}
-    
-
-get tipo(){
-return this._tipo
-}
-set tipo(nuevo_tipo){
-this._tipo = nuevo_tipo;
-}
-}
 
 
 
 //-----gatos---------------------
-class Gatos extends Dueno {
-constructor(nombre_mas,  motivo) {
+class Gatos extends Animal {
+constructor(tipo,nombre_mas,  motivo) {
 super(nombre_mas, motivo)
     
 this._nombre_mas = nombre_mas;
@@ -143,14 +125,16 @@ return this._motivo
 set motivo(nuevo_motivo){
 this._motivo = nuevo_motivo;
 }    
+    info() {
+return 'El tipo de animal es un:${this.tipo} , mientras que el nombre de la mascota es: ${this.nombre_mas} y la enfermedad es:${this.motivo}';
+}
 }
 
 
 //-----perros---------------------
-class Perros extends Dueno {
-constructor(nombre_mas,  motivo) {
+class Perros extends Animal {
+constructor(tipo,nombre_mas,  motivo) {
 super(nombre_mas, motivo)
-    
 this._nombre_mas = nombre_mas;
 this._motivo = motivo;
 }
@@ -168,14 +152,17 @@ return this._motivo
 }
 set motivo(nuevo_motivo){
 this._motivo = nuevo_motivo;
-}    
+}  
+    info() {
+return 'El tipo de animal es un:${this.tipo} , mientras que el nombre de la mascota es: ${this.nombre_mas} y la enfermedad es:${this.motivo}';
+}
 }
 
 
 //-----conejos---------------------
-class Conejos extends Dueno {
+class Conejos extends Animal {
 constructor(nombre_mas,  motivo) {
-super(nombre_mas, motivo)
+super(tipo,nombre_mas, motivo)
     
 this._nombre_mas = nombre_mas;
 this._motivo = motivo;
@@ -195,6 +182,10 @@ return this._motivo
 set motivo(nuevo_motivo){
 this._motivo = nuevo_motivo;
 }    
+info() {
+return 'El tipo de animal es un:${this.tipo} , mientras que el nombre de la mascota es: ${this.nombre_mas} y la enfermedad es:${this.motivo}';
+}
+
 }
 
 
