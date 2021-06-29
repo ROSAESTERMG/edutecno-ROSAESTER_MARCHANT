@@ -44,21 +44,22 @@ function guardarpersona() {
 	    var valor = document.getElementById("TIPO");
         var valor = valor.value;
     alert(valor);
- if valor=='GATO'{
-const gato = new Animal_g(valor);
+ if (valor=='GATO'){
+const gato = new Animal_g(valor);console.log(gato.tipo);
  }
 else
-   if valor=='PERRO'{
-const perro = new Animal_p(valor);
+   if (valor=='PERRO'){
+const perro = new Animal_p(valor); console.log(perro.tipo);
  }
 else
-    if valor=='CONEJO'{
-const conejo = new Animal_c(valor);
+    if (valor=='CONEJO'){
+const conejo = new Animal_c(valor);console.log(conejo.tipo);
  }
 
 
     
-    
+
+/*    
 p.innerHTML = `ðŸ¶ Nombre: ${nombre} - Raza: ${raza}`;
 data.appendChild(p);
 document.getElementById('nombre').value = '';
@@ -74,7 +75,6 @@ constructor( tipo) {
 super( tipo)
 this._tipo = tipo;
 }
-    
 
 get tipo(){
 return this._tipo
@@ -120,8 +120,8 @@ this._tipo = nuevo_tipo;
 
 
 
-//-----dueno---------------------
-class Mascota extends Dueno {
+//-----gatos---------------------
+class Gatos extends Dueno {
 constructor(nombre_mas,  motivo) {
 super(nombre_mas, motivo)
     
@@ -143,6 +143,58 @@ return this._motivo
 set motivo(nuevo_motivo){
 this._motivo = nuevo_motivo;
 }    
-    
-    
 }
+
+
+//-----perros---------------------
+class Perros extends Dueno {
+constructor(nombre_mas,  motivo) {
+super(nombre_mas, motivo)
+    
+this._nombre_mas = nombre_mas;
+this._motivo = motivo;
+}
+    
+get nombre_mas(){
+return this._nombre_mas
+}
+set nombre_mas(nuevo_nombre_mas){
+this._nombre_mas = nuevo_nombre_mas;
+}
+    
+    
+get motivo(){
+return this._motivo
+}
+set motivo(nuevo_motivo){
+this._motivo = nuevo_motivo;
+}    
+}
+
+
+//-----conejos---------------------
+class Conejos extends Dueno {
+constructor(nombre_mas,  motivo) {
+super(nombre_mas, motivo)
+    
+this._nombre_mas = nombre_mas;
+this._motivo = motivo;
+}
+    
+get nombre_mas(){
+return this._nombre_mas
+}
+set nombre_mas(nuevo_nombre_mas){
+this._nombre_mas = nuevo_nombre_mas;
+}
+    
+    
+get motivo(){
+return this._motivo
+}
+set motivo(nuevo_motivo){
+this._motivo = nuevo_motivo;
+}    
+}
+
+
