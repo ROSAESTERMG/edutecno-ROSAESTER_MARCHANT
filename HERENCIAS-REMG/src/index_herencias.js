@@ -31,35 +31,79 @@ this._nombretelefono = nuevo_telefono;
     
     
     
-datosMascotaDueno(){
+datosPropietario(){
 console.log('El nombre del dueño es: ${this.nombre}. El domicilio es: ${this.domiclio} y el número de teléfono es:${this.telefono}');
 }
- 
-    
-let registrar = document.getElementById('guardar');
-registrar.addEventListener('click',agregar);
-
-  
 }
 
-function agregar() {
-const perroData = registrando();
-const nombre = perroData.nombre;
-const raza = perroData.raza;
-const data = document.getElementById('data');
-const p = document.createElement('p');
+
+let guardar = document.getElementById('guardar');
+guardar.addEventListener('click',guardarpersona);
+
+function guardarpersona() {
+	    var valor = document.getElementById("TIPO");
+        var valor = valor.value;
+    alert(valor);
+ if valor=='GATO'{
+const gato = new Animal_g(valor);
+ }
+else
+   if valor=='PERRO'{
+const perro = new Animal_p(valor);
+ }
+else
+    if valor=='CONEJO'{
+const conejo = new Animal_c(valor);
+ }
+
+
     
     
 p.innerHTML = `ðŸ¶ Nombre: ${nombre} - Raza: ${raza}`;
 data.appendChild(p);
 document.getElementById('nombre').value = '';
 document.getElementById('raza').value = '';
+*/
 }
 
 
 
-//--------------animal------
-class Animal extends Dueno {
+//--------------gato------
+class Animal_g extends Dueno {
+constructor( tipo) {
+super( tipo)
+this._tipo = tipo;
+}
+    
+
+get tipo(){
+return this._tipo
+}
+set tipo(nuevo_tipo){
+this._tipo = nuevo_tipo;
+}
+}
+
+
+
+//--------------perro------
+class Animal_p extends Dueno {
+constructor( tipo) {
+super( tipo)
+this._tipo = tipo;
+}
+    
+
+get tipo(){
+return this._tipo
+}
+set tipo(nuevo_tipo){
+this._tipo = nuevo_tipo;
+}
+}
+
+//--------------conejo------
+class Animal_c extends Dueno {
 constructor( tipo) {
 super( tipo)
 this._tipo = tipo;
@@ -101,22 +145,4 @@ this._motivo = nuevo_motivo;
 }    
     
     
-}
-
-
-class Arqueros extends Jugadores {
-    constructor(nombre, edad, dorsal, lesiones, alimentacion, titular)
-{
-super(nombre, edad, dorsal, lesiones)
-this._alimentacion = alimentacion;
-this.titular = titular;
-}
-get alimentacion(){
-return this._alimentacion = alimentacion;
-}
-set alimentacion(n_alimentacion){
-this._alimentacion = n_alimentacion;
-}
-    
-
 }
