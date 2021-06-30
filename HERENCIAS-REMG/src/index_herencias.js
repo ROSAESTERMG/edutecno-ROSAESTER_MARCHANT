@@ -5,10 +5,10 @@ var texto='';
 class Dueno {
 constructor(nombre, direccion,telefono) {
 this._nombre = nombre;
-this.direccion = direccion;
-this.telefono = telefono;
-}
-get nombre(){
+this._direccion = direccion;
+this._telefono = telefono;
+}   
+ get nombre(){
 return this._nombre;
 }
 set nombre(nuevo_nombre){
@@ -33,7 +33,7 @@ this._nombretelefono = nuevo_telefono;
     
     
 datosPropietario(){
-console.log(`El nombre del dueño es: ${this.nombre}. El domicilio es: ${this.direccion} y el número de teléfono es:${this.telefono}`);
+return (`El nombre del dueño es: ${this.nombre}. El domicilio es: ${this.direccion} y el número de teléfono es:${this.telefono}`);
 }
 }
 
@@ -42,8 +42,8 @@ console.log(`El nombre del dueño es: ${this.nombre}. El domicilio es: ${this.di
 
 //--------------Animal------
 class Animal extends Dueno {
-constructor( tipo) {
-super( tipo)
+constructor( nombre, direccion,telefono,tipo) {
+super( nombre, direccion,telefono)
 this._tipo = tipo;
 }
 
@@ -60,8 +60,8 @@ this._tipo = nuevo_tipo;
 
 //-----gatos---------------------
 class Gatos extends Animal {
-constructor(tipo,nombre_mas,motivo) {
-super(tipo)
+constructor(nombre, direccion,telefono,tipo,nombre_mas,motivo) {
+super(nombre, direccion,telefono,tipo)
     
 this._nombre_mas = nombre_mas;
 this._motivo = motivo;
@@ -90,8 +90,8 @@ return (`El tipo de animal es un:${this.tipo} , mientras que el nombre de la mas
 
 //-----perros---------------------
 class Perros extends Animal {
-constructor(tipo,nombre_mas,  motivo) {
-super(tipo)
+constructor(nombre, direccion,telefono,tipo,nombre_mas,motivo) {
+super(nombre, direccion,telefono,tipo)
 this._nombre_mas = nombre_mas;
 this._motivo = motivo;
 }
@@ -118,8 +118,8 @@ return `El tipo de animal es un:${this.tipo} , mientras que el nombre de la masc
 
 //-----conejos---------------------
 class Conejos extends Animal {
-constructor(tipo,nombre_mas,  motivo) {
-super(tipo)
+constructor(nombre, direccion,telefono,tipo,nombre_mas,motivo) {
+super(nombre, direccion,telefono,tipo)
     
 this._nombre_mas = nombre_mas;
 this._motivo = motivo;
@@ -155,46 +155,41 @@ guardar.addEventListener('click',guardarpersona);
 //------------------------------------------
 function guardarpersona() {
 	    let valor = document.getElementById("TIPO").value;
-       // var valor = valor.value;
+      
 
     let n1 = document.getElementById('nom_due').value;
     let n2 = document.getElementById('tele').value;
     let n3 = document.getElementById('domi').value;
     let n4 = document.getElementById('nom_masc').value;
     let n6 = document.getElementById('motivo').value;
+     texto='<p align="center">DATOS GUARDADOS';
+     
     
     if (valor=='GATO'){
-
-    const gato = new Gatos(valor,n4, n6);
-     console.log(gato.tipo);
-        texto='<p align="center">DATOS GUARDADOS';
-        texto+='<br>';
-         texto+='<br><li align="center">'+gato.info()+'</li></p>';
+    const gato = new Gatos(n1,n2,n3,valor,n4, n6);
+     texto+='<br><li align="center">'+gato.datosPropietario()+'</li></p>';
+     texto+='<br><li align="center">'+gato.info()+'</li></p>';
         //console.log(gato.info());
 
  }
 else
    if (valor=='PERRO'){
-const perro = new Perros(valor,n4, n6);
-       console.log(perro.tipo);
-       texto='<p align="center">DATOS GUARDADOS';
-        texto+='<br>';
-         texto+='<br><li align="center">'+perro.info()+'</li></p>';
+const perro = new Perros(n1,n2,n3,valor,n4, n6);
+      texto+='<br><li align="center">'+perro.datosPropietario()+'</li></p>';
+        texto+='<br><li align="center">'+perro.info()+'</li></p>';
        //console.log(perro.info());
  }
 else
     if (valor=='CONEJO'){
-const conejo = new Conejos(valor,n4, n6);
-        console.log(conejo.tipo);
-        texto='<p align="center">DATOS GUARDADOS';
-        texto+='<br>';
-         texto+='<br><li align="center">'+conejo.info()+'</li></p>';
+           const conejo = new Conejos(n1,n2,n3,valor,n4, n6);
+      texto+='<br><li align="center">'+conejo.datosPropietario()+'</li></p>';
+        texto+='<br><li align="center">'+conejo.info()+'</li></p>';
        // console.log(conejo.info());
  }
 
 
     
-
+ //console.log(conejo.datosPropietario());
   
 div_mostrar.innerHTML  = texto;
 
