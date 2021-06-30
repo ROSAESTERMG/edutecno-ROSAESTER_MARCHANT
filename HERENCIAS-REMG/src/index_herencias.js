@@ -1,5 +1,6 @@
 // JavaScript Document
 
+var texto='';
 //--------------dueño----------------
 class Dueno {
 constructor(nombre, direccion,telefono) {
@@ -32,7 +33,7 @@ this._nombretelefono = nuevo_telefono;
     
     
 datosPropietario(){
-console.log('El nombre del dueño es: ${this.nombre}. El domicilio es: ${this.domiclio} y el número de teléfono es:${this.telefono}');
+console.log(`El nombre del dueño es: ${this.nombre}. El domicilio es: ${this.direccion} y el número de teléfono es:${this.telefono}`);
 }
 }
 
@@ -44,13 +45,14 @@ console.log('El nombre del dueño es: ${this.nombre}. El domicilio es: ${this.do
 let guardar = document.getElementById('guardar');
 guardar.addEventListener('click',guardarpersona);
 
+
 //------------------------------------------
 function guardarpersona() {
 	    let valor = document.getElementById("TIPO").value;
        // var valor = valor.value;
 
-let n1 = document.getElementById('nom_due').value;
-let n2 = document.getElementById('tele').value;
+    let n1 = document.getElementById('nom_due').value;
+    let n2 = document.getElementById('tele').value;
     let n3 = document.getElementById('domi').value;
     let n4 = document.getElementById('nom_masc').value;
     let n6 = document.getElementById('motivo').value;
@@ -59,28 +61,47 @@ let n2 = document.getElementById('tele').value;
 
     const gato = new Gatos(valor,n4, n6);
      console.log(gato.tipo);
+        texto='<p align="center">DATOS GUARDADOS';
+        texto+='<br>';
+         texto+='<br><li align="center">'+gato.info()+'</li></p>';
+        //console.log(gato.info());
+
  }
 else
    if (valor=='PERRO'){
 const perro = new Perros(valor,n4, n6);
        console.log(perro.tipo);
+       texto='<p align="center">DATOS GUARDADOS';
+        texto+='<br>';
+         texto+='<br><li align="center">'+perro.info()+'</li></p>';
+       //console.log(perro.info());
  }
 else
     if (valor=='CONEJO'){
 const conejo = new Conejos(valor,n4, n6);
         console.log(conejo.tipo);
+        texto='<p align="center">DATOS GUARDADOS';
+        texto+='<br>';
+         texto+='<br><li align="center">'+conejo.info()+'</li></p>';
+       // console.log(conejo.info());
  }
 
 
     
 
-/*    
-p.innerHTML = `ðŸ¶ Nombre: ${nombre} - Raza: ${raza}`;
-data.appendChild(p);
-document.getElementById('nombre').value = '';
-document.getElementById('raza').value = '';
-*/
+  
+div_mostrar.innerHTML  = texto;
+
+document.getElementById('nom_due').value = '';
+document.getElementById('tele').value = '';
+document.getElementById('domi').value = '';
+document.getElementById('nom_masc').value = '';
+document.getElementById('TIPO').value = 'PERRO';
+document.getElementById('motivo').value = '';
 }
+
+
+
 
 
 
@@ -104,8 +125,8 @@ this._tipo = nuevo_tipo;
 
 //-----gatos---------------------
 class Gatos extends Animal {
-constructor(tipo,nombre_mas,  motivo) {
-super(nombre_mas, motivo)
+constructor(tipo,nombre_mas,motivo) {
+super(tipo)
     
 this._nombre_mas = nombre_mas;
 this._motivo = motivo;
@@ -125,8 +146,9 @@ return this._motivo
 set motivo(nuevo_motivo){
 this._motivo = nuevo_motivo;
 }    
-    info() {
-return 'El tipo de animal es un:${this.tipo} , mientras que el nombre de la mascota es: ${this.nombre_mas} y la enfermedad es:${this.motivo}';
+
+info() {
+return (`El tipo de animal es un:${this.tipo} , mientras que el nombre de la mascota es: ${this.nombre_mas} y la enfermedad es:${this.motivo}`);
 }
 }
 
@@ -134,7 +156,7 @@ return 'El tipo de animal es un:${this.tipo} , mientras que el nombre de la masc
 //-----perros---------------------
 class Perros extends Animal {
 constructor(tipo,nombre_mas,  motivo) {
-super(nombre_mas, motivo)
+super(tipo)
 this._nombre_mas = nombre_mas;
 this._motivo = motivo;
 }
@@ -154,15 +176,15 @@ set motivo(nuevo_motivo){
 this._motivo = nuevo_motivo;
 }  
     info() {
-return 'El tipo de animal es un:${this.tipo} , mientras que el nombre de la mascota es: ${this.nombre_mas} y la enfermedad es:${this.motivo}';
+return `El tipo de animal es un:${this.tipo} , mientras que el nombre de la mascota es: ${this.nombre_mas} y la enfermedad es:${this.motivo}`;
 }
 }
 
 
 //-----conejos---------------------
 class Conejos extends Animal {
-constructor(nombre_mas,  motivo) {
-super(tipo,nombre_mas, motivo)
+constructor(tipo,nombre_mas,  motivo) {
+super(tipo)
     
 this._nombre_mas = nombre_mas;
 this._motivo = motivo;
@@ -183,7 +205,7 @@ set motivo(nuevo_motivo){
 this._motivo = nuevo_motivo;
 }    
 info() {
-return 'El tipo de animal es un:${this.tipo} , mientras que el nombre de la mascota es: ${this.nombre_mas} y la enfermedad es:${this.motivo}';
+return `El tipo de animal es un:${this.tipo} , mientras que el nombre de la mascota es: ${this.nombre_mas} y la enfermedad es:${this.motivo}`;
 }
 
 }
