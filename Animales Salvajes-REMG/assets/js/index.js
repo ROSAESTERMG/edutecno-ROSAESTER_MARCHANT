@@ -1,6 +1,6 @@
 // JavaScript Document
-import Animal from 'animal.js';
-import Clinica from 'clinica.js';
+import Animal from './animal.js';
+import Clinica from './clinica.js';
 
 var $texto = '';
 
@@ -13,9 +13,7 @@ Clinica.prototype.setAgregarAnimal = function (animal_nuevo) {
 var animal1 = new Animal('mio', 'ANEMIA');
 var clinica1 = new Clinica('Arica', [animal1]);
 
-//------------------------------------------
-let guardar = document.getElementById('btnRegistrar');
-guardar.addEventListener('click', guardar_animal);
+
 
 
 //----------- guardar  ------------------//
@@ -35,17 +33,40 @@ console.log(impuestox.deducible);
   alert('datos ingresados');
 }
 
-//------------ cambiar imagen ---------------//
-let cambiar = document.getElementById('animal');
-console.log(cambiar.value)
-/*cambiar.addEventListener('change', cambiar_animal(cambiar.value))
+//------------------------------------------
+let guardar = document.getElementById('btnRegistrar');
+guardar.addEventListener('click', guardar_animal);
 
-const cambiar_animal = () => {
-    
-animal.addEventListener("change",()=>{
-  preview.setAttribute("src","https://s3-us-west-2.amazonaws.com/s.cdpn.io/222579/" + animal.selectedOptions[0].value + ".jpg")
-})
-}*/
+
+//------------ cambiar imagen ---------------//
+//let cambiar = document.getElementById('animal');
+
+document.getElementById("animal").onchange = function(){
+    let value = document.getElementById("animal").value;
+    cambiar_animal(value)
+}
+
+
+const cambiar_animal = (tipo_animal) => {
+ var imagen= document.getElementById('preview');
+         
+console.log(tipo_animal)
+if (tipo_animal=='Leon')
+     imagen.style.backgroundImage='url(assets/imgs/Leon.png)';  
+else
+if (tipo_animal=='Lobo')
+imagen.style.backgroundImage='url(assets/imgs/Lobo.png)'; 
+else
+if (tipo_animal=='Oso')
+imagen.style.backgroundImage='url(assets/imgs/Oso.png)'; 
+else
+if (tipo_animal=='Serpiente')
+imagen.style.backgroundImage='url(assets/imgs/Serpiente.png)'; 
+else
+if (tipo_animal=='Aguila')
+imagen.style.backgroundImage='url(assets/imgs/Aguila.png)'; 
+
+}
 
 //----------- mostrar animal ------------------//
 const mostrar_animal = () => {
