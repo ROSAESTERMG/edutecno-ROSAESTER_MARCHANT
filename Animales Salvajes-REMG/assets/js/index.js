@@ -33,13 +33,16 @@ console.log(animalx.nombre);
 console.log(animalx.edad);
 console.log(animalx.obs);
 console.log(animalx.img);
-$texto = '<div class="card" style="width: 18rem;background-color: #848080;">'
+$/*texto = '<div class="card" style="width: 18rem;background-color: #848080;">'
 $texto += '<img class="card-img-top" ' 
 $texto +='src="assets/imgs/'+cambiar_animal(a1)+'" alt="Foto Animal Registrado">'
 $texto = '<div class="card-body" >'
 $texto = '<img src="assets/imgs/audio.svg"  height="30px" alt=""/>'
 $texto = '</div></div>'
-Animales.innerHTML = $texto;
+*/
+    
+    $texto = '<div class="card" style="width: 300px;background-color: #848080;"><img class="card-img-top" src="assets/imgs/'+cambiar_animal(a1)+'"  alt="Foto Animal Registrado">    <div class="card-body"><a href="#" class="btn btn-primary"><img src="assets/imgs/audio.svg"  height="30px" alt=""/></a>  </div>    </div>'
+    document.getElementById('Animales').innerHTML =$texto
 alert('datos ingresados');
 }
     else

@@ -5,10 +5,11 @@
 
 body {
   background-image: url("../imgs/fondo.jpg");
-  background-position: bottom;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+    background-attachment: fixed;
   padding: 100px;
 }
 
