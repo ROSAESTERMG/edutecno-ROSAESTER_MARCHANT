@@ -4,12 +4,12 @@
 
 export default class Animal{
 constructor(nombre,edad,img,obs){
-    
 this._nombre = nombre;
 this._edad = edad;
 this._img = img;
 this._obs = obs;
 }
+    
 get nombre(){
 return this._nombre;
 }
@@ -23,8 +23,22 @@ return this._edad;
 set edad(nuevo_edad){
 this._edad = nuevo_edad;
 }   
-    
-    
+
+get img(){
+return this._img;
+}
+set img(nuevo_img){
+this._img = nuevo_img;
+}   
+ 
+
+get obs(){
+return this._obs;
+}
+set obs(nuevo_obs){
+this._obs = nuevo_obs;
+}   
+     
 mostrardatos(){
 //return ((monto*deducible)*0,21);
 }
@@ -45,26 +59,40 @@ class AnimalSonido extends Animal {
   }
 }
 
-
-
 //---------------leon---------------------
 class Leon extends AnimalSonido {
-  constructor(nombre,edad,img,comentarios, sonido,tipo) {
+  constructor(nombre,edad,img,comentarios, sonido) {
     super(nombre,edad,img,comentarios, sonido)
-    this._tipo = tipo;
  }
+return('Rugido.mp3')
+} 
 
-  get tipo() {
-    return this._tipo
-  }
-  set tipo(nuevo_tipo) {
-    this._tipo = nuevo_tipo;
-  }
+//---------------lobo---------------------
+class Lobo extends AnimalSonido {
+  constructor(nombre,edad,img,comentarios, sonido) {
+    super(nombre,edad,img,comentarios, sonido)
+ }
+return('Aullido.mp3')
+}  
 
- emitirsonido() {
-    return (`El tipo de animal es un:${this.tipo} , mientras que el nombre de la mascota es: ${this.nombre_mas} y la enfermedad es:${this.motivo}`);
-  }
-}    
-
-
-
+//---------------oso---------------------
+class Oso extends AnimalSonido {
+  constructor(nombre,edad,img,comentarios, sonido) {
+    super(nombre,edad,img,comentarios, sonido)
+ }
+return('Grunido.mp3')
+}  
+//---------------serpiente---------------------
+class Serpiente extends AnimalSonido {
+  constructor(nombre,edad,img,comentarios, sonido) {
+    super(nombre,edad,img,comentarios, sonido)
+ }
+return('Siseo.mp3')
+}  
+//---------------aguila---------------------
+class Aguila extends AnimalSonido {
+  constructor(nombre,edad,img,comentarios, sonido) {
+    super(nombre,edad,img,comentarios, sonido)
+ }
+return('Chillido.mp3')
+}  

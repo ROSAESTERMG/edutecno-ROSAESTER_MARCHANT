@@ -39,7 +39,6 @@ guardar.addEventListener('click', guardar_animal);
 
 
 //------------ cambiar imagen ---------------//
-//let cambiar = document.getElementById('animal');
 
 document.getElementById("animal").onchange = function(){
     let value = document.getElementById("animal").value;
