@@ -26,20 +26,20 @@ var e1 = document.getElementById('edad').value;
 var c1 = document.getElementById('comentarios').value;
 var i1 = document.getElementById('preview').style.backgroundImage;
 
-if (a0>0 && eo>0 && c1!='' )   
+if (a0>0 && e0>0 && c1!='' )   
 {
-    
 let animalx = new Animal(a1,e1,c1,i1);
-
 console.log(animalx.nombre);
-    console.log(animalx.edad);
-    console.log(animalx.obs);
+console.log(animalx.edad);
+console.log(animalx.obs);
 console.log(animalx.img);
 $texto = '<div class="card" style="width: 18rem;background-color: #848080;">'
-$texto += '<img class="card-img-top" src="" alt="Foto Animal Registrado">'
+$texto += '<img class="card-img-top" ' 
+$texto +='src="assets/imgs/'+cambiar_animal(a1)+'" alt="Foto Animal Registrado">'
 $texto = '<div class="card-body" >'
 $texto = '<img src="assets/imgs/audio.svg"  height="30px" alt=""/>'
 $texto = '</div></div>'
+Animales.innerHTML = $texto;
 alert('datos ingresados');
 }
     else
@@ -58,13 +58,16 @@ guardar.addEventListener('click', guardar_animal);
 
 document.getElementById("animal").onchange = function(){
     let value = document.getElementById("animal").value;
-    cambiar_animal(value)
+    //cambiar_animal(value)
+    var imagen= document.getElementById('preview');
+    imagen.style.backgroundImage='url(assets/imgs/'+cambiar_animal(value)+')';  
 }
 
 
 const cambiar_animal = (tipo_animal) => {
-var imagen= document.getElementById('preview');
-if (tipo_animal=='Leon')
+let nombre_ima=''
+//var imagen= document.getElementById('preview');
+/*if (tipo_animal=='Leon')
      imagen.style.backgroundImage='url(assets/imgs/Leon.png)';  
 else
 if (tipo_animal=='Lobo')
@@ -78,7 +81,22 @@ imagen.style.backgroundImage='url(assets/imgs/Serpiente.jpg)';
 else
 if (tipo_animal=='Aguila')
 imagen.style.backgroundImage='url(assets/imgs/Aguila.png)'; 
-
+*/
+if (tipo_animal=='Leon')
+     nombre_ima='Leon.png';  
+else
+if (tipo_animal=='Lobo')
+nombre_ima='Lobo.jpg'; 
+else
+if (tipo_animal=='Oso')
+nombre_ima='Oso.jpg'; 
+else
+if (tipo_animal=='Serpiente')
+nombre_ima='Serpiente.jpg'; 
+else
+if (tipo_animal=='Aguila')
+nombre_ima='Aguila.png'; 
+return (nombre_ima)
 }
 
 //----------- mostrar animal ------------------//
