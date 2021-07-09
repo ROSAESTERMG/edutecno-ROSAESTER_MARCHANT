@@ -11,7 +11,7 @@ Clinica.prototype.setAgregarAnimal = function (animal_nuevo) {
 }
 
 var animal1 = new Animal('mio', 'ANEMIA');
-var clinica1 = new Clinica('Arica', [animal1]);
+var clinica1 = new Clinica('Australia', [animal1]);
 
 
 
@@ -19,19 +19,35 @@ var clinica1 = new Clinica('Arica', [animal1]);
 //----------- guardar  ------------------//
 const guardar_animal = () => {
 
-  var n1 = document.getElementById('animal').value;
-  var m1 = parseInt(document.getElementById('edad').value);
-  var d1 = parseInt(document.getElementById('comnetarios').value);
+var a0 = document.getElementById('animal').selectedIndex ;
+var a1 = document.getElementById('animal').value ;    
+var e0 = document.getElementById('edad').selectedIndex;
+var e1 = document.getElementById('edad').value;
+var c1 = document.getElementById('comentarios').value;
+var i1 = document.getElementById('preview').style.backgroundImage;
 
-   let impuestox = new Impuestos(m1,d1);
-console.log(impuestox.monto);
-console.log(impuestox.deducible); 
-     
-    /*document.getElementById("nombre").value = '';
-  document.getElementById("monto").value = '';
-  document.getElementById("deducible").value = '';*/
-  alert('datos ingresados');
+if (a0>0 && eo>0 && c1!='' )   
+{
+    
+let animalx = new Animal(a1,e1,c1,i1);
+
+console.log(animalx.nombre);
+    console.log(animalx.edad);
+    console.log(animalx.obs);
+console.log(animalx.img);
+$texto = '<div class="card" style="width: 18rem;background-color: #848080;">'
+$texto += '<img class="card-img-top" src="" alt="Foto Animal Registrado">'
+$texto = '<div class="card-body" >'
+$texto = '<img src="assets/imgs/audio.svg"  height="30px" alt=""/>'
+$texto = '</div></div>'
+alert('datos ingresados');
 }
+    else
+        alert('***ERROR*** Faltan Datos por Ingresar')
+
+}
+
+
 
 //------------------------------------------
 let guardar = document.getElementById('btnRegistrar');

@@ -64,7 +64,7 @@ class Leon extends AnimalSonido {
   constructor(nombre,edad,img,comentarios, sonido) {
     super(nombre,edad,img,comentarios, sonido)
  }
-return('Rugido.mp3')
+//return('Rugido.mp3')
 } 
 
 //---------------lobo---------------------
@@ -72,7 +72,7 @@ class Lobo extends AnimalSonido {
   constructor(nombre,edad,img,comentarios, sonido) {
     super(nombre,edad,img,comentarios, sonido)
  }
-return('Aullido.mp3')
+//return('Aullido.mp3')
 }  
 
 //---------------oso---------------------
@@ -80,19 +80,19 @@ class Oso extends AnimalSonido {
   constructor(nombre,edad,img,comentarios, sonido) {
     super(nombre,edad,img,comentarios, sonido)
  }
-return('Grunido.mp3')
+//return('Grunido.mp3')
 }  
 //---------------serpiente---------------------
 class Serpiente extends AnimalSonido {
   constructor(nombre,edad,img,comentarios, sonido) {
     super(nombre,edad,img,comentarios, sonido)
  }
-return('Siseo.mp3')
+//return('Siseo.mp3')
 }  
 //---------------aguila---------------------
 class Aguila extends AnimalSonido {
   constructor(nombre,edad,img,comentarios, sonido) {
     super(nombre,edad,img,comentarios, sonido)
  }
-return('Chillido.mp3')
+//return('Chillido.mp3')
 }  
