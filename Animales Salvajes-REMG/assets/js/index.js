@@ -48,20 +48,18 @@ document.getElementById("animal").onchange = function(){
 
 
 const cambiar_animal = (tipo_animal) => {
- var imagen= document.getElementById('preview');
-         
-console.log(tipo_animal)
+var imagen= document.getElementById('preview');
 if (tipo_animal=='Leon')
      imagen.style.backgroundImage='url(assets/imgs/Leon.png)';  
 else
 if (tipo_animal=='Lobo')
-imagen.style.backgroundImage='url(assets/imgs/Lobo.png)'; 
+imagen.style.backgroundImage='url(assets/imgs/Lobo.jpg)'; 
 else
 if (tipo_animal=='Oso')
-imagen.style.backgroundImage='url(assets/imgs/Oso.png)'; 
+imagen.style.backgroundImage='url(assets/imgs/Oso.jpg)'; 
 else
 if (tipo_animal=='Serpiente')
-imagen.style.backgroundImage='url(assets/imgs/Serpiente.png)'; 
+imagen.style.backgroundImage='url(assets/imgs/Serpiente.jpg)'; 
 else
 if (tipo_animal=='Aguila')
 imagen.style.backgroundImage='url(assets/imgs/Aguila.png)'; 
