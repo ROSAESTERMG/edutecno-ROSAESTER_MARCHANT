@@ -39,8 +39,9 @@ set obs(nuevo_obs){
 this._obs = nuevo_obs;
 }   
      
-mostrardatos(){
-//return ((monto*deducible)*0,21);
+mostrardatos(tipo_animal){
+
+    alert('llegó el animal'+tipo_animal);
 }
 }
 

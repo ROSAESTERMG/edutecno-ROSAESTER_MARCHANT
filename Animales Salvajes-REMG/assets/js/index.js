@@ -13,9 +13,6 @@ Clinica.prototype.setAgregarAnimal = function (animal_nuevo) {
 var animal1 = new Animal('mio', 'ANEMIA');
 var clinica1 = new Clinica('Australia', [animal1]);
 
-
-
-
 //----------- guardar  ------------------//
 const guardar_animal = () => {
 
@@ -29,20 +26,13 @@ var i1 = document.getElementById('preview').style.backgroundImage;
 if (a0>0 && e0>0 && c1!='' )   
 {
 let animalx = new Animal(a1,e1,c1,i1);
-console.log(animalx.nombre);
+/*console.log(animalx.nombre);
 console.log(animalx.edad);
 console.log(animalx.obs);
-console.log(animalx.img);
-$/*texto = '<div class="card" style="width: 18rem;background-color: #848080;">'
-$texto += '<img class="card-img-top" ' 
-$texto +='src="assets/imgs/'+cambiar_animal(a1)+'" alt="Foto Animal Registrado">'
-$texto = '<div class="card-body" >'
-$texto = '<img src="assets/imgs/audio.svg"  height="30px" alt=""/>'
-$texto = '</div></div>'
-*/
-    
-    $texto = '<div class="card" style="width: 300px;background-color: #848080;"><img class="card-img-top" src="assets/imgs/'+cambiar_animal(a1)+'"  alt="Foto Animal Registrado">    <div class="card-body"><a href="#" class="btn btn-primary"><img src="assets/imgs/audio.svg"  height="30px" alt=""/></a>  </div>    </div>'
-    document.getElementById('Animales').innerHTML =$texto
+console.log(animalx.img);*/
+$texto = '<div class="card" style="width: 300px;background-color: #848080;"><img class="card-img-top" src="assets/imgs/'+cambiar_animal(a1)+'"  alt="Foto Animal Registrado">    <div class="card-body"><img src="assets/imgs/audio.svg"  height="30px" alt=""/ onclic="animalx.mostrardatos("'+a1+'")"></div>  </div>';
+
+document.getElementById('Animales').innerHTML =$texto
 alert('datos ingresados');
 }
     else
@@ -58,7 +48,6 @@ guardar.addEventListener('click', guardar_animal);
 
 
 //------------ cambiar imagen ---------------//
-
 document.getElementById("animal").onchange = function(){
     let value = document.getElementById("animal").value;
     //cambiar_animal(value)
@@ -69,22 +58,6 @@ document.getElementById("animal").onchange = function(){
 
 const cambiar_animal = (tipo_animal) => {
 let nombre_ima=''
-//var imagen= document.getElementById('preview');
-/*if (tipo_animal=='Leon')
-     imagen.style.backgroundImage='url(assets/imgs/Leon.png)';  
-else
-if (tipo_animal=='Lobo')
-imagen.style.backgroundImage='url(assets/imgs/Lobo.jpg)'; 
-else
-if (tipo_animal=='Oso')
-imagen.style.backgroundImage='url(assets/imgs/Oso.jpg)'; 
-else
-if (tipo_animal=='Serpiente')
-imagen.style.backgroundImage='url(assets/imgs/Serpiente.jpg)'; 
-else
-if (tipo_animal=='Aguila')
-imagen.style.backgroundImage='url(assets/imgs/Aguila.png)'; 
-*/
 if (tipo_animal=='Leon')
      nombre_ima='Leon.png';  
 else
