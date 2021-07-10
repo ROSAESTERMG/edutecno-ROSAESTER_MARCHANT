@@ -41,20 +41,3 @@ this._obs = nuevo_obs;
 
     
 }
-/*
-//-----------------------sonidos------------------------
-class Animalsonido extends Animal {
-  constructor(nombre,edad,img,obs, sonido) {
-    super(nombre,edad,img,obs)
-    this._sonido = sonido;
-  }
-
-  get sonido() {
-    return this._sonido
-  }
-  set sonido(nuevo_sonido) {
-    this._sonido = nuevo_sonido;
-  }
-}
-*/
-
