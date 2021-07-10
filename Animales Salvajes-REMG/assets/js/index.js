@@ -14,75 +14,88 @@ var $animal_5;
 class Leon extends Animalito {
   constructor(nombre,edad,obs,img, sonido) {
    super(nombre,edad,img,obs)
-    this._sonido = sonido;
+    this._sonido = 'Rugido.mp3';
   }
 
   get sonido() {
     return this._sonido
   }
-  set sonido(nuevo_sonido) {
-    this._sonido = nuevo_sonido;
-  }
-    mostrardatos(){
+ activaraudio(){
     var playme = document.getElementById('player'); 
         playme.src='assets/sounds/'+this.sonido; 
         playme.load();
         playme.play();
-        alert('assets/sounds/'+this.sonido)
 }
 }
 
 //---------------lobo---------------------
 class Lobo extends Animalito {
   constructor(nombre,edad,obs,img, sonido) {
-    super(nombre,edad,img,obs, sonido)
- }
+   super(nombre,edad,img,obs)
+    this._sonido = 'Aullido.mp3';
+  }
+
   get sonido() {
     return this._sonido
   }
-  set sonido(nuevo_sonido) {
-    this._sonido = nuevo_sonido;
-  }
+    activaraudio(){
+    var playme = document.getElementById('player'); 
+        playme.src='assets/sounds/'+this.sonido; 
+        playme.load();
+        playme.play();
+}
 }  
 
 //---------------oso---------------------
 class Oso extends Animalito {
   constructor(nombre,edad,obs,img, sonido) {
-    super(nombre,edad,img,obs, sonido)
- }
+   super(nombre,edad,img,obs)
+    this._sonido = 'Grunido.mp3';
+  }
 
   get sonido() {
     return this._sonido
   }
-  set sonido(nuevo_sonido) {
-    this._sonido = nuevo_sonido;
-  }
+     activaraudio(){
+    var playme = document.getElementById('player'); 
+        playme.src='assets/sounds/'+this.sonido; 
+        playme.load();
+        playme.play();
+}
 }  
 //---------------serpiente---------------------
 class Serpiente extends Animalito {
   constructor(nombre,edad,obs,img, sonido) {
-    super(nombre,edad,img,obs, sonido)
- }
+   super(nombre,edad,img,obs)
+    this._sonido = 'Siseo.mp3';
+  }
 
   get sonido() {
     return this._sonido
   }
-  set sonido(nuevo_sonido) {
-    this._sonido = nuevo_sonido;
-  }
+     activaraudio(){
+    var playme = document.getElementById('player'); 
+        playme.src='assets/sounds/'+this.sonido; 
+        playme.load();
+        playme.play();
+}
 }  
 //---------------aguila---------------------
 class Aguila extends Animalito {
   constructor(nombre,edad,obs,img, sonido) {
-    super(nombre,edad,img,obs, sonido)
- }
+   super(nombre,edad,img,obs)
+    this._sonido = 'Chillido.mp3';
+  }
 
   get sonido() {
     return this._sonido
   }
-  set sonido(nuevo_sonido) {
-    this._sonido = nuevo_sonido;
-  }
+  activaraudio(){
+    var playme = document.getElementById('player'); 
+        playme.src='assets/sounds/'+this.sonido; 
+        playme.load();
+        playme.play();
+}
 }  
 
 
@@ -157,7 +170,7 @@ document.getElementById("animal").onchange = function(){
 
 //------------audio animalito------------------------------
  $(document).on('click','#audio1',function(){
-      $animal_1.mostrardatos();
+      $animal_1.activaraudio();
  })
 
 
