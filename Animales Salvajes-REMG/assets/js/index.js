@@ -1,6 +1,11 @@
 // JavaScript Document
 import Animalito from './animal.js';
-var $texto = '';
+var $texto='';
+var $animal_1;
+var $animal_2;
+var $animal_3
+var $animal_4;
+var $animal_5;
 
 
 
@@ -18,6 +23,9 @@ class Leon extends Animalito {
   set sonido(nuevo_sonido) {
     this._sonido = nuevo_sonido;
   }
+    mostrardatos(){
+    alert('llegó el animal'+tipo_animal);
+}
 }
 
 //---------------lobo---------------------
@@ -94,33 +102,34 @@ var i1 = document.getElementById('preview').style.backgroundImage;
 if (a0>0 && e0>0 && c1!='' ) {
 
 if (a0==1){
-    let animalx = new Leon(a1,e1,c1,i1,'Rugido.mp3');
-    $texto += '<div id="leon" class="card" style="width: 300px;background-color: #848080;"><img class="card-img-top" src="assets/imgs/'+cambiar_animal(a1)+'"  alt="Foto Animal Registrado">    <div class="card-body"><img src="assets/imgs/audio.svg"  height="30px" alt=""/ onclic="Leon.mostrardatos("'+a1+'")"></div>  </div>';
+    $animal_1 = new Leon(a1,e1,c1,i1,'Rugido.mp3');
+    $texto += '<div id="leon" class="card" style="width: 300px;background-color: #848080;"><img class="card-img-top" src="assets/imgs/'+cambiar_animal(a1)+'"  alt="Foto Animal Registrado">    <div class="card-body"><img  id="audio1" src="assets/imgs/audio.svg"  height="30px" alt=""/></div>  </div>';
+    
 }
 else
 if (a0==2){
-    let animalx = new Lobo(a1,e1,c1,i1,'Aullido.mp3');
+    $animal_2 = new Lobo(a1,e1,c1,i1,'Aullido.mp3');
     $texto += '<div id="lobo" class="card" style="width: 300px;background-color: #848080;"><img class="card-img-top" src="assets/imgs/'+cambiar_animal(a1)+'"  alt="Foto Animal Registrado">    <div class="card-body"><img src="assets/imgs/audio.svg"  height="30px" alt=""/ onclic="Lobo.mostrardatos("'+a1+'")"></div>  </div>';
 }
 else
 if (a0==3){
-    let animalx = new Oso(a1,e1,c1,i1,'Grunido.mp3'); 
+    $animal_3 = new Oso(a1,e1,c1,i1,'Grunido.mp3'); 
     $texto += '<div id="oso" class="card" style="width: 300px;background-color: #848080;"><img class="card-img-top" src="assets/imgs/'+cambiar_animal(a1)+'"  alt="Foto Animal Registrado">    <div class="card-body"><img src="assets/imgs/audio.svg"  height="30px" alt=""/ onclic="Oso.mostrardatos("'+a1+'")"></div>  </div>';
 }
 else
 if (a0==4){
-    let animalx = new Serpiente(a1,e1,c1,i1,'Siseo.mp3');
+    $animal_4 = new Serpiente(a1,e1,c1,i1,'Siseo.mp3');
     $texto += '<div id="serpiente" class="card" style="width: 300px;background-color: #848080;"><img class="card-img-top" src="assets/imgs/'+cambiar_animal(a1)+'"  alt="Foto Animal Registrado">    <div class="card-body"><img src="assets/imgs/audio.svg"  height="30px" alt=""/ onclic="Serpiente.mostrardatos("'+a1+'")"></div>  </div>';
 }
 else
 if (a0==5){
-     let animalx = new Aguila(a1,e1,c1,i1,'Chillido.mp3');
+    $animal_5 = new Aguila(a1,e1,c1,i1,'Chillido.mp3');
     $texto += '<div id="Aguila" class="card" style="width: 300px;background-color: #848080;"><img class="card-img-top" src="assets/imgs/'+cambiar_animal(a1)+'"  alt="Foto Animal Registrado">    <div class="card-body"><img src="assets/imgs/audio.svg"  height="30px" alt=""/ onclic="Aguila.mostrardatos("'+a1+'")"></div>  </div>';
 }
 
-//$texto = '<div class="card" style="width: 300px;background-color: #848080;"><img class="card-img-top" src="assets/imgs/'+cambiar_animal(a1)+'"  alt="Foto Animal Registrado">    <div class="card-body"><img src="assets/imgs/audio.svg"  height="30px" alt=""/ onclic="animalx.mostrardatos("'+a1+'")"></div>  </div>';
+
 let option = animal.querySelector(`option[value="${a1}"]`);
-  option.disabled = true;
+option.disabled = true;
 document.getElementById('Animales').innerHTML =$texto;
 document.getElementById('animal').value="Seleccione un animal";
 document.getElementById('edad').value="Seleccione un rango de años";
@@ -140,7 +149,7 @@ let guardar = document.getElementById('btnRegistrar');
 guardar.addEventListener('click', guardar_animal);
 
 
-//------------ cambiar imagen ---------------//
+//------------ cambiar imagen al momento de cambiar el select---------------//
 document.getElementById("animal").onchange = function(){
     let value = document.getElementById("animal").value;
     //cambiar_animal(value)
@@ -148,6 +157,19 @@ document.getElementById("animal").onchange = function(){
     imagen.style.backgroundImage='url(assets/imgs/'+cambiar_animal(value)+')';  
 }
 
+
+//------------audio animalito------------------------------
+ $(document).on('click','#audio1',function(){
+      alert('tipo_animal');
+     $animal_1.mostrardatos();
+ })
+
+//animalx.mostrardatos('leon');
+
+
+
+
+//--------------cambia foto animal-----------------
 const cambiar_animal = (tipo_animal) => {
 let nombre_ima=''
 if (tipo_animal=='Leon')
