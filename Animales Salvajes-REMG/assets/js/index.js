@@ -1,20 +1,14 @@
 // JavaScript Document
-import Animal from './animal.js';
+import Clinica from './clinica.js';
+import Animalito from './animal.js';
 
 var $texto = '';
 
-//----------------fin --------------------------------//
-
-//Clinica.prototype.setAgregarAnimal = function (animal_nuevo) {
-//  this.animal.push(animal_nuevo_nuevo);
-//}
-
-//var animal1 = new Animal('mio', 'ANEMIA');
-//var clinica1 = new Clinica('Australia', [animal1]);
 
 
 //----------- guardar  ------------------//
 const guardar_animal = () => {
+event.preventDefault();
 var a0 = document.getElementById('animal').selectedIndex ;
 var a1 = document.getElementById('animal').value ;    
 var e0 = document.getElementById('edad').selectedIndex;
@@ -22,10 +16,13 @@ var e1 = document.getElementById('edad').value;
 var c1 = document.getElementById('comentarios').value;
 var i1 = document.getElementById('preview').style.backgroundImage;
 
-if (a0>0 && e0>0 && c1!='' )   
-{
+if (a0>0 && e0>0 && c1!='' ) {
 if (a0==1){
-    let animalx = new Leon(a1,e1,c1,i1);
+//let animalx = new Leon(a1,e1,c1,i1);
+   var animalx = new Leon(a1,e1,c1,i1);
+
+console.log(animalx.nombre);
+    
     $texto = '<div class="card" style="width: 300px;background-color: #848080;"><img class="card-img-top" src="assets/imgs/'+cambiar_animal(a1)+'"  alt="Foto Animal Registrado">    <div class="card-body"><img src="assets/imgs/audio.svg"  height="30px" alt=""/ onclic="Leon.mostrardatos("'+a1+'")"></div>  </div>';
 }
 else
@@ -41,10 +38,10 @@ if (a0==4){
     let animalx = new Serpiente(a1,e1,c1,i1);
 }
 else
-if (a0==5){}
+if (a0==5){
      let animalx = new Aguila(a1,e1,c1,i1);
 }
-    
+    let clinicax = new Clinica('Australia', [animalx]); 
 $texto = '<div class="card" style="width: 300px;background-color: #848080;"><img class="card-img-top" src="assets/imgs/'+cambiar_animal(a1)+'"  alt="Foto Animal Registrado">    <div class="card-body"><img src="assets/imgs/audio.svg"  height="30px" alt=""/ onclic="animalx.mostrardatos("'+a1+'")"></div>  </div>';
 
 document.getElementById('Animales').innerHTML =$texto;

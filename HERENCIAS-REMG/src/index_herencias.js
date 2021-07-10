@@ -149,8 +149,6 @@ guardar.addEventListener('click', guardarpersona);
 //------------------------------------------
 function guardarpersona() {
   let valor = document.getElementById("TIPO").value;
-
-
   let n1 = document.getElementById('nom_due').value;
   let n2 = document.getElementById('tele').value;
   let n3 = document.getElementById('domi').value;

@@ -2,7 +2,7 @@
 
 //------------------CLASE ANIMAL -----------------//
 
-export default class Animal{
+export default class Animalito{
 constructor(nombre,edad,img,obs){
 this._nombre = nombre;
 this._edad = edad;
@@ -47,11 +47,26 @@ this._obs = nuevo_obs;
     alert('llegó el animal'+tipo_animal);
 }
 }
-
+/*
 //-----------------------sonidos------------------------
-class AnimalSonido extends Animal {
-  constructor(nombre,edad,img,comentarios, sonido) {
-    super(nombre,edad,img,comentarios)
+class Animalsonido extends Animal {
+  constructor(nombre,edad,img,obs, sonido) {
+    super(nombre,edad,img,obs)
+    this._sonido = sonido;
+  }
+
+  get sonido() {
+    return this._sonido
+  }
+  set sonido(nuevo_sonido) {
+    this._sonido = nuevo_sonido;
+  }
+}
+*/
+//---------------leon---------------------
+class Leon extends Animalito {
+  constructor(nombre,edad,img,obs, sonido) {
+   super(nombre,edad,img,obs)
     this._sonido = sonido;
   }
 
@@ -63,40 +78,32 @@ class AnimalSonido extends Animal {
   }
 }
 
-//---------------leon---------------------
-class Leon extends AnimalSonido {
-  constructor(nombre,edad,img,comentarios, sonido) {
-    super(nombre,edad,img,comentarios, sonido)
- }
-//return('Rugido.mp3')
-} 
-
 //---------------lobo---------------------
-class Lobo extends AnimalSonido {
-  constructor(nombre,edad,img,comentarios, sonido) {
-    super(nombre,edad,img,comentarios, sonido)
+class Lobo extends Animalito {
+  constructor(nombre,edad,img,obs, sonido) {
+    super(nombre,edad,img,obs, sonido)
  }
 //return('Aullido.mp3')
 }  
 
 //---------------oso---------------------
-class Oso extends AnimalSonido {
-  constructor(nombre,edad,img,comentarios, sonido) {
-    super(nombre,edad,img,comentarios, sonido)
+class Oso extends Animalito {
+  constructor(nombre,edad,img,obs, sonido) {
+    super(nombre,edad,img,obs, sonido)
  }
 //return('Grunido.mp3')
 }  
 //---------------serpiente---------------------
-class Serpiente extends AnimalSonido {
-  constructor(nombre,edad,img,comentarios, sonido) {
-    super(nombre,edad,img,comentarios, sonido)
+class Serpiente extends Animalito {
+  constructor(nombre,edad,img,obs, sonido) {
+    super(nombre,edad,img,obs, sonido)
  }
 //return('Siseo.mp3')
 }  
 //---------------aguila---------------------
-class Aguila extends AnimalSonido {
-  constructor(nombre,edad,img,comentarios, sonido) {
-    super(nombre,edad,img,comentarios, sonido)
+class Aguila extends Animalito {
+  constructor(nombre,edad,img,obs, sonido) {
+    super(nombre,edad,img,obs, sonido)
  }
 //return('Chillido.mp3')
 }  
