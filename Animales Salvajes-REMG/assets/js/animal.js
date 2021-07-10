@@ -39,7 +39,10 @@ set obs(nuevo_obs){
 this._obs = nuevo_obs;
 }   
      
-mostrardatos(tipo_animal){
+/*datosanimal() {
+    return (`El nombre del dueño es: ${this.nombre}. El domicilio es: ${this.direccion} y el número de teléfono es:${this.telefono}`);
+  }*/
+    mostrardatos(tipo_animal){
 
     alert('llegó el animal'+tipo_animal);
 }
