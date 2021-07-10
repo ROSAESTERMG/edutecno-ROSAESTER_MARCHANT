@@ -8,7 +8,6 @@ var $animal_3
 var $animal_4;
 var $animal_5;
 
-
 //-----------------------------------clases de animales ----------------------------
 //---------------leon---------------------
 class Leon extends Animalito {
