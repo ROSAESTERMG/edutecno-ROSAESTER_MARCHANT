@@ -20,12 +20,14 @@
       <tr>
         <th>id</th>
         <th>tarea</th>
+          <th></th>
       </tr>
     </thead>
     <tbody>
       <tr  v-for="(valor, index) in inputs" :key="index">
         <td v-text="index+1"></td>
         <td v-text="valor"></td>
+          <td><button @click="del(valor)">Eliminar</button></td>
       </tr>
     </tbody>
   </table>
@@ -42,8 +44,13 @@
   	agregar: function(){
     this.inputs.push(this.nuevo);
     this.nuevo="";
+    },
+  del: function(valor) {
+      var indice = this.inputs.indexOf(valor);
+      if (indice != -1)
+        this.inputs.splice(indice, 1);
     }
-  }
+    }
 });
 </script>
 </body>
