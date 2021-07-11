@@ -4,24 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<title>ToDoList</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<title>Desafio ToDoList</title>
 </head>
 <body>
-<!-- <div id="app" align="center" style="width: 300px;">
-    <H3>CREA UNA NUEVA TAREA</H3>
-    <input v-model="nombre" type="text"/>
-    <input v-model="id" type="text" / >
-   <button @click="Guardar()" >Añadir</button>
-    <br>   
-      <ul id="app2">
-      <li v-for="tarea in tareas" :key="tarea.id">
-          <strong>{{ tarea.id }}</strong> {{ tarea.nombre }}
-      </li>
-    </ul>
-</div>-->
-<div id="app" align="center" style="width: 300px;">
-  <p> lo envio sin la importación de archivos ya que he desintalado 4 veces nodejs y me sigue arrojando warning la instalación de Vue Cli</p>
+<div align="center">
+<div id="app"  align="center" style="width:400px;">
+  <p> lo envio sin la importación de archivos ya que he desintalado 4 veces nodejs y me sigue arrojando warning la instalación de Vue Cli</p><br>
     <H3>CREA UNA NUEVA TAREA</H3>
   <input type="text" v-model="nuevo">
   <button @click="agregar">Agregar Tarea</button>
@@ -35,31 +24,26 @@
     </thead>
     <tbody>
       <tr  v-for="(valor, index) in inputs" :key="index">
-        <td v-text="index"></td>
+        <td v-text="index+1"></td>
         <td v-text="valor"></td>
       </tr>
     </tbody>
   </table>
 </div>
+</div>
 <script>
     new Vue({
- 
-	el: "#app",
+ 	el: "#app",
   data: {
   	inputs: [],
     nuevo: "" ,
-     
-   
-  },
+   },
   methods: {
   	agregar: function(){
-       
-    	this.inputs.push(this.nuevo);
-       
-      this.nuevo="";
+    this.inputs.push(this.nuevo);
+    this.nuevo="";
     }
   }
-
 });
 </script>
 </body>
