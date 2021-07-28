@@ -4,7 +4,7 @@
       <router-link to="/">Inicio</router-link> |
       <router-link to="/about">Sobre mi</router-link>|
       <router-link to="/contacto">Contato</router-link>|
-      <router-link to="/post/:id">Ultimo Post</router-link>|
+      <router-link to="/post/Ultimo">Ultimo Post</router-link>|
        <router-link to="/rutas">Rutas</router-link>|
     </div>
     <router-view/>

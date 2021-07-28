@@ -1,6 +1,7 @@
 <template>
   <div id="app">
    <!-- CONTENIDO PARA LA VISTA DE POST -->
+   <h1> Número de Post: {{$route.params.id}}</h1>
 <header class="masthead" style="background-image: url('/assets/img/chevrolet-blazer.jpg');">
     <div class="overlay"></div>
     <div class="container">

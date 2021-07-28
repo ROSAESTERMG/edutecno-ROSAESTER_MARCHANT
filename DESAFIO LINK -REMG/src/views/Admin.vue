@@ -1,7 +1,7 @@
 <template>
   <div class="ultimo">
-   <h1>POST</h1>
-<Pagina/>
+   <h1>NUESTROS POST</h1>
+   <Pagina/>
   </div>
 </template>
 
